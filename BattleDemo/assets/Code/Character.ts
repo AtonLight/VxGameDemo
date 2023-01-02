@@ -60,9 +60,18 @@ export class Character {
       this.block = this.block+ this.currentWeapon.block;
     }
 
-
+    public removeWeapon(){
+      this.attack = this.attack - this.currentWeapon.attack;
+      this.throw = this.throw - this.currentWeapon.baseThrow;
+      this.doubleHit = this.doubleHit - this.currentWeapon.doubleHit;
+      this.criticalStrike = this.criticalStrike - this.currentWeapon.criticalStrike;
+      this.dodge = this.dodge - this.currentWeapon.dodge;
+      this.criticalDamage = this.criticalDamage - this.currentWeapon.criticalDamage;
+      this.block = this.block - this.currentWeapon.block;
+    }
     public RandomWeapon(){
       if(this.currentWeapon != null && this.isThrowWeapon){
+        this.removeWeapon();
         this.currentWeapon = null;
       }
       if(this.currentWeapon == null && this.weapons.length > 0){
@@ -75,9 +84,10 @@ export class Character {
         }
       }
 
-      setTimeout(()=>{
+      Item.battleFlow.nextFlow(BattleFlowEnum.ThrowWeapon);
+      /*setTimeout(()=>{
         Item.battleFlow.nextFlow(BattleFlowEnum.ThrowWeapon);
-      },0.1)
+      },0.1)*/
     }
 
     public throwWeapon(){
@@ -89,9 +99,10 @@ export class Character {
           Item.view.setTxtBattle(this.charNme+" 投掷武器:"+this.currentWeapon.weaponName);
         }
       }
-      setTimeout(()=>{
+      Item.battleFlow.nextFlow(BattleFlowEnum.Attack);
+      /*setTimeout(()=>{
         Item.battleFlow.nextFlow(BattleFlowEnum.Attack);
-      },0.1)
+      },0.1)*/
     }
 
     public Attacks():number{
