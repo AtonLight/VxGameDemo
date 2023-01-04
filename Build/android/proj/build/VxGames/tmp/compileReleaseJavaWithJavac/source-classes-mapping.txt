@@ -1,4 +1,0 @@
-com/cocos/game/AppActivity.java
- com.cocos.game.AppActivity
-com/VxGameDemo/Game/BuildConfig.java
- com.VxGameDemo.Game.BuildConfig

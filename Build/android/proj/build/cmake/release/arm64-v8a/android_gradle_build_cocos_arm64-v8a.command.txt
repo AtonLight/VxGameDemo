@@ -1,7 +1,0 @@
-Executable : C:\Users\scottxie\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
-arguments : 
--C
-D:\CocosProject\Project-demo\Build\android\proj\build\cmake\release\arm64-v8a
-cocos
-jvmArgs : 
-
