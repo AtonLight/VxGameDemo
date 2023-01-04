@@ -30,7 +30,7 @@ export class Main extends Component {
     }
 
     update(deltaTime: number) {
-        Item.battleFlow.update(deltaTime);
+       Item.battleFlow.update(deltaTime);
     }
 }
 

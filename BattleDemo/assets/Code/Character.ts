@@ -26,6 +26,11 @@ export class Character {
     currentSpeed:number = 0;
     isThrowWeapon:boolean = false;
     currentHealth:number = 0;
+    totalDamage:number = 0;
+    isBlock:boolean = false;
+    isDodge:boolean = false;
+    isDouble:boolean = false;
+    isCriical:boolean = false;
     weapons:weapon[];
 
     constructor(dataName:string,type:CharacterType) { 
@@ -80,7 +85,7 @@ export class Character {
           let i = math.randomRangeInt(0,this.weapons.length);
           this.getweapon(i);
           this.weapons.splice(i,1);
-          Item.view.setTxtBattle(this.charNme+" 获得武器: "+this.currentWeapon.weaponName);
+          //Item.view.setTxtBattle(this.charNme+" 获得武器: "+this.currentWeapon.weaponName);
         }
       }
 
@@ -96,7 +101,7 @@ export class Character {
         if(this.currentWeapon.baseThrow>= rand || this.currentWeapon.times <= 0){
           this.isThrowWeapon = true;
           //console.log(this.data.ID+"投掷武器:"+this.currentWeapon.data.ID);
-          Item.view.setTxtBattle(this.charNme+" 投掷武器:"+this.currentWeapon.weaponName);
+          //Item.view.setTxtBattle(this.charNme+" 投掷武器:"+this.currentWeapon.weaponName);
         }
       }
       Item.battleFlow.nextFlow(BattleFlowEnum.Attack);
@@ -119,29 +124,29 @@ export class Character {
       if(this.criticalStrike >= rand){
         damage = damage * this.criticalDamage;
         //console.log(this.data.ID+"打出了暴击");
-        Item.view.setTxtBattle(this.charNme+" 打出了暴击");
+        //Item.view.setTxtBattle(this.charNme+" 打出了暴击");
       }
       rand = math.random();
-      if(this.doubleHit >= rand){
+      if(this.doubleHit >= rand && this.isThrowWeapon == false){
         damage = damage * 2;
         //console.log(this.data.ID+"打出了连击");
-        Item.view.setTxtBattle(this.charNme+" 打出了连击");
+        //Item.view.setTxtBattle(this.charNme+" 打出了连击");
       }
       //console.log(this.data.ID+"开始攻击 "+damage);
-      return damage;
+      return Math.floor(damage);
     }
 
     public dodgeAndBlock():boolean{
       let rand = math.random();
       if(this.dodge >= rand){
         //console.log(this.data.ID+"闪避了攻击！");
-        Item.view.setTxtBattle(this.charNme+" 闪避了攻击！");
+        //Item.view.setTxtBattle(this.charNme+" 闪避了攻击！");
         return true;
       }else{
         rand = math.random();
         if(this.block >= rand){
           //console.log(this.data.ID+"格挡了攻击！");
-          Item.view.setTxtBattle(this.charNme+" 格挡了攻击！");
+          //Item.view.setTxtBattle(this.charNme+" 格挡了攻击！");
           return true;
         }else{
           return false;
@@ -151,10 +156,11 @@ export class Character {
 
     public getDamage(damage:number):boolean{
       this.currentHealth = this.currentHealth - damage;
-      Item.view.setTxtBattle(this.charNme+" 受到了"+damage+"点伤害！");
+      Item.view.setBattleMsg(damage);
       if (this.currentHealth <= 0){
         //console.log(this.data.ID+"被打败了");
-        Item.view.setTxtBattle(this.charNme+" 被打败了");
+        //Item.view.setTxtBattle(this.charNme+" 被打败了");
+        Item.view.setFinalMsg();
         this.currentHealth = 0;
         Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health)
         return false;
@@ -166,6 +172,17 @@ export class Character {
 
     public resetSpeed(){
       this.currentSpeed = 0;
+    }
+
+    public resetState(){
+      this.isDodge = false;
+      this.isCriical = false;
+      this.isDodge = false;
+      this.isBlock = false;
+    }
+
+    public setTotalDamge(damage:number){
+      this.totalDamage = this.totalDamage + damage;
     }
     update(deltaTime: number) {
         

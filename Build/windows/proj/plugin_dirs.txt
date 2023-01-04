@@ -1,0 +1,3 @@
+# directories for searching native plugins
+D:/CocosProject/Project-demo/BattleDemo/native
+D:/CocosProject/Project-demo/BattleDemo/extensions

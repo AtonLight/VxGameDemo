@@ -13,6 +13,7 @@ export class BattleFlow  {
     action:boolean = false;
     times:number = 0;
     turn:number = 1;
+    private totalTime:number = 0;
     constructor() { 
         this.action = false;
         this.times= 0;
@@ -21,8 +22,8 @@ export class BattleFlow  {
 
     public update(deltaTime: number) {
        if(this.action == true){
-            //console.log("'Update ");
             this.times = this.times + deltaTime;
+            this.totalTime = this.totalTime + this.times;
             if (this.times>= 0.15){
                 for(let i = 0;i< this.characters.length;i++){
                     this.characters[i].currentSpeed = this.characters[i].currentSpeed + this.characters[i].speed
@@ -74,6 +75,7 @@ export class BattleFlow  {
         if(this.defineCharacter.dodgeAndBlock() == false){
             if(this.defineCharacter.getDamage(damage) == true){
                 setTimeout(()=>{
+                    this.attackCharacter.setTotalDamge(damage);
                     this.attackCharacter.resetSpeed();
                     this.turn ++;
                     this.action = true;
@@ -82,11 +84,18 @@ export class BattleFlow  {
         }else{
             setTimeout(()=>{
                 this.attackCharacter.resetSpeed();
+                this.attackCharacter.resetState();
+                this.defineCharacter.resetState();
                 this.turn ++;
                 this.action = true;
             },0.5)
         }
     }
+
+    getTotalTime(){
+        return this.totalTime;
+    }
+
 }
 
 

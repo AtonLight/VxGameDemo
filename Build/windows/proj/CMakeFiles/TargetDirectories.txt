@@ -1,0 +1,8 @@
+D:/CocosProject/Project-demo/Build/windows/proj/CMakeFiles/builtin-res.dir
+D:/CocosProject/Project-demo/Build/windows/proj/CMakeFiles/cocos_engine.dir
+D:/CocosProject/Project-demo/Build/windows/proj/CMakeFiles/BattleDemo.dir
+D:/CocosProject/Project-demo/Build/windows/proj/CMakeFiles/copy_resource.dir
+D:/CocosProject/Project-demo/Build/windows/proj/CMakeFiles/ALL_BUILD.dir
+D:/CocosProject/Project-demo/Build/windows/proj/CMakeFiles/ZERO_CHECK.dir
+D:/CocosProject/Project-demo/Build/windows/proj/boost/container/CMakeFiles/boost_container.dir
+D:/CocosProject/Project-demo/Build/windows/proj/boost/container/CMakeFiles/ALL_BUILD.dir

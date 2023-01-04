@@ -1,0 +1,26 @@
+^D:\COCOSPROJECT\PROJECT-DEMO\BUILD\WINDOWS\PROJ\CMAKEFILES\E86A29CED1A880F31DB6139FB562DEE7\COPY_RESOURCE.RULE
+setlocal
+D:\CocosDashboard\resources\.editors\Creator\3.6.2\resources\tools\cmake\bin\cmake.exe -E echo "Copying resources to D:/CocosProject/Project-demo/Build/windows/proj/Release"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CocosDashboard\resources\.editors\Creator\3.6.2\resources\tools\cmake\bin\cmake.exe -E make_directory D:/CocosProject/Project-demo/Build/windows/proj/Release/Resources
+if %errorlevel% neq 0 goto :cmEnd
+robocopy D:/CocosProject/Project-demo/Build/windows/data/ D:/CocosProject/Project-demo/Build/windows/proj/Release/Resources/ /MIR || ( exit 0 )
+if %errorlevel% neq 0 goto :cmEnd
+D:\CocosDashboard\resources\.editors\Creator\3.6.2\resources\tools\cmake\bin\cmake.exe -E echo "Copying resources done!"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COCOSPROJECT\PROJECT-DEMO\BATTLEDEMO\NATIVE\ENGINE\WIN64\CMAKELISTS.TXT
+setlocal
+D:\CocosDashboard\resources\.editors\Creator\3.6.2\resources\tools\cmake\bin\cmake.exe -SD:/CocosProject/Project-demo/BattleDemo/native/engine/win64 -BD:/CocosProject/Project-demo/Build/windows/proj --check-stamp-file D:/CocosProject/Project-demo/Build/windows/proj/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

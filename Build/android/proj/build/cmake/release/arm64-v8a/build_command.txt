@@ -1,0 +1,28 @@
+                Executable : C:\Users\scottxie\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HD:\CocosProject\Project-demo\BattleDemo\native\engine\android
+-DCMAKE_FIND_ROOT_PATH=D:\CocosProject\Project-demo\Build\android\proj\build\cmake\release\prefab\arm64-v8a\prefab
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\scottxie\AppData\Local\Android\Sdk\ndk\21.3.6528147\build\cmake\android.toolchain.cmake
+-DANDROID_ABI=arm64-v8a
+-DANDROID_NDK=C:\Users\scottxie\AppData\Local\Android\Sdk\ndk\21.3.6528147
+-DANDROID_PLATFORM=android-21
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DCMAKE_ANDROID_NDK=C:\Users\scottxie\AppData\Local\Android\Sdk\ndk\21.3.6528147
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\CocosProject\Project-demo\Build\android\proj\build\VxGames\intermediates\cmake\release\obj\arm64-v8a
+-DCMAKE_MAKE_PROGRAM=C:\Users\scottxie\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=21
+-DRES_DIR=D:/CocosProject/Project-demo/Build/android
+-DCOCOS_X_PATH=D:/CocosDashboard/resources/.editors/Creator/3.6.2/resources/resources/3d/engine/native
+-DANDROID_STL=c++_static
+-DANDROID_TOOLCHAIN=clang
+-DANDROID_ARM_NEON=TRUE
+-DANDROID_LD=gold
+-DHIDE_SYMBOLS=ON
+-BD:\CocosProject\Project-demo\Build\android\proj\build\cmake\release\arm64-v8a
+-GNinja
+jvmArgs : 
+
+Build command args:

@@ -1,0 +1,56 @@
+Check for working CXX compiler: C:/Users/scottxie/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe
+Check for working CXX compiler: C:/Users/scottxie/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works
+Detecting CXX compiler ABI info
+Detecting CXX compiler ABI info - done
+Detecting CXX compile features
+Detecting CXX compile features - done
+The ASM compiler identification is Clang
+Found assembler: C:/Users/scottxie/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+Check for working C compiler: C:/Users/scottxie/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+Check for working C compiler: C:/Users/scottxie/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works
+Detecting C compiler ABI info
+Detecting C compiler ABI info - done
+Detecting C compile features
+Detecting C compile features - done
+platform: Android
+Ignore NO_WERROR
+OPTION BUILTIN_COCOS_X_PATH:	
+OPTION USE_BUILTIN_EXTERNAL:	OFF
+OPTION USE_MODULES:	OFF
+OPTION CC_USE_METAL:	
+OPTION CC_USE_GLES3:	ON
+OPTION CC_USE_GLES2:	ON
+OPTION CC_USE_VULKAN:	OFF
+OPTION CC_DEBUG_FORCE:	OFF
+OPTION USE_SE_V8:	ON
+OPTION USE_V8_DEBUGGER:	ON
+OPTION USE_V8_DEBUGGER_FORCE:	OFF
+OPTION USE_SE_SM:	OFF
+OPTION USE_SOCKET:	ON
+OPTION USE_AUDIO:	ON
+OPTION USE_EDIT_BOX:	ON
+OPTION USE_VIDEO:	ON
+OPTION USE_WEBVIEW:	ON
+OPTION USE_MIDDLEWARE:	ON
+OPTION USE_DRAGONBONES:	ON
+OPTION USE_SPINE:	ON
+OPTION USE_WEBSOCKET_SERVER:	OFF
+OPTION USE_PHYSICS_PHYSX:	OFF
+OPTION USE_JOB_SYSTEM_TBB:	OFF
+OPTION USE_JOB_SYSTEM_TASKFLOW:	OFF
+OPTION USE_XR:	OFF
+OPTION USE_SERVER_MODE:	OFF
+OPTION USE_CCACHE:	OFF
+OPTION CCACHE_EXECUTABLE:	CCACHE_EXECUTABLE-NOTFOUND
+OPTION NODE_EXECUTABLE:	NODE_EXECUTABLE-NOTFOUND
+OPTION NET_MODE:	0
+OPTION USE_REMOTE_LOG:	OFF
+platform path: 
+Try generating D:/CocosProject/Project-demo/BattleDemo/native/engine/android/Pre-AutoLoadPlulgins.cmake
+NodeJS is not found in $PATH, skip searching native plugins.
+Searching hook files Pre*.cmake or *Pre.cmake in D:/CocosProject/Project-demo/BattleDemo/native/engine/android
+::Loading Pre-service.cmake
+No plugins are loaded!
+Searching hook files Post*.cmake or *Post.cmake in D:/CocosProject/Project-demo/BattleDemo/native/engine/android
+::Loading Post-service.cmake
+Configuring done

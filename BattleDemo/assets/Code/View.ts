@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Label,Prefab,instantiate, ProgressBar} from 'cc';
+import { _decorator, Component, Node, Label,Prefab,instantiate, ProgressBar, math} from 'cc';
 import { CharacterType } from './Enum';
 import { Item } from './Game';
 const { ccclass, property } = _decorator;
@@ -27,14 +27,71 @@ export class View extends Component {
         
     }
 
-    public setTxtBattle(value:string){
+    public setBattleMsg(value:number){
         let txt = instantiate(this.txtBattle)
         this.context.addChild(txt);
-        txt.getComponent(Label).string = "第"+Item.battleFlow.turn+"回合："+value;
-       if(this.isLog == true){
-            console.log("第"+Item.battleFlow.turn+"回合："+value);
-       }
        
+       let weaponMsg,attackMsg,damageMsg
+       let atkName = Item.battleFlow.attackCharacter.charNme;
+       let defName = Item.battleFlow.defineCharacter.charNme;
+       let nowTime = this.showTime(Item.battleFlow.getTotalTime());
+       if(Item.battleFlow.attackCharacter.currentWeapon == null){
+            weaponMsg = " 赤手空拳 "
+       }else if(Item.battleFlow.attackCharacter.isThrowWeapon == true){
+            weaponMsg = " 投掷武器 " + Item.battleFlow.attackCharacter.currentWeapon.weaponName;
+       }else{
+            weaponMsg = " 掏出武器 " + Item.battleFlow.attackCharacter.currentWeapon.weaponName;
+       }
+
+       if (Item.battleFlow.attackCharacter.isDouble == true){
+            attackMsg = "【连续攻击】 "
+       }else{
+            attackMsg = " 攻击 "
+       }
+
+       if(Item.battleFlow.defineCharacter.isDodge){
+            damageMsg = " 【被闪避了！】"
+       }else if(Item.battleFlow.defineCharacter.isBlock){
+            damageMsg = " 【被格挡了！】"
+       }else if(Item.battleFlow.attackCharacter.isDodge){
+            damageMsg = " 造成了 "+value+ " 点【暴击】伤害"
+       }else{
+            damageMsg = " 造成了 "+value+ " 点伤害"
+       }
+
+       txt.getComponent(Label).string = nowTime + atkName + weaponMsg + attackMsg + defName + damageMsg;
+       if(this.isLog == true){
+            console.log( nowTime + atkName + weaponMsg + attackMsg + defName + damageMsg);
+       }
+    }
+
+    public setFinalMsg(){
+        let txtFirst = instantiate(this.txtBattle)
+        txtFirst.getComponent(Label).string = "【结算】"
+        this.context.addChild(txtFirst);
+
+        let nowTime = this.showTime(Item.battleFlow.getTotalTime());
+        let atkName = Item.battleFlow.attackCharacter.charNme;
+        let defName = Item.battleFlow.defineCharacter.charNme;
+
+        let txtSecend = instantiate(this.txtBattle)
+        txtSecend.getComponent(Label).string = nowTime + " "+atkName+" 击败了 "+defName;
+        this.context.addChild(txtSecend);
+
+        let atkDamage = Item.battleFlow.attackCharacter.totalDamage;
+        let defDamage = Item.battleFlow.defineCharacter.totalDamage;
+
+        let txtThird = instantiate(this.txtBattle)
+        txtThird.getComponent(Label).string = atkName+" 共造成了 "+atkDamage+" 点伤害";
+        this.context.addChild(txtThird);
+
+        let txtFourth = instantiate(this.txtBattle)
+        txtFourth.getComponent(Label).string = defName+" 共造成了 "+defDamage+" 点伤害";
+        this.context.addChild(txtFourth);
+
+        let txtFifth = instantiate(this.txtBattle)
+        txtFifth.getComponent(Label).string = atkName +" 获得了胜利！"
+        this.context.addChild(txtFifth);
     }
 
     public setHeath(type:CharacterType,health:number,present:number){
@@ -55,6 +112,23 @@ export class View extends Component {
                     child[i].destroy();
                 }
             }
+        }
+    }
+
+    public showTime(totalTime:number):string {
+        let times;
+        let min = Math.floor((totalTime / 60))
+        let sec = Math.floor(((totalTime /60) - min) * 60) 
+        if (min < 10 ){
+            times = "0"+min+":"
+        }else{
+            times = min+":"
+        }
+
+        if(sec < 10){
+            return times + "0" + sec+" ";
+        }else{
+            return  times + sec+" ";
         }
     }
 }

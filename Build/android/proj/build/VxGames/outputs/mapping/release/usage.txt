@@ -1,0 +1,1580 @@
+org.cocos2dx.okhttp3.RequestBody$3
+org.cocos2dx.okhttp3.internal.connection.RealConnection:
+    public static org.cocos2dx.okhttp3.internal.connection.RealConnection testConnection(org.cocos2dx.okhttp3.ConnectionPool,org.cocos2dx.okhttp3.Route,java.net.Socket,long)
+    public org.cocos2dx.okhttp3.Protocol protocol()
+    private static final java.lang.String NPE_THROW_WITH_NULL
+    private static final int MAX_TUNNEL_ATTEMPTS
+org.cocos2dx.okhttp3.Cache$Entry
+androidx.appcompat.app.AppCompatDelegateImpl:
+    android.view.ViewGroup getSubDecor()
+    final androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoTimeNightModeManager()
+    static final java.lang.String EXCEPTION_HANDLER_MESSAGE_SUFFIX
+org.cocos2dx.okio.Pipe$PipeSink
+org.cocos2dx.okhttp3.internal.http.RealInterceptorChain:
+    public org.cocos2dx.okhttp3.Interceptor$Chain withConnectTimeout(int,java.util.concurrent.TimeUnit)
+    public org.cocos2dx.okhttp3.Interceptor$Chain withReadTimeout(int,java.util.concurrent.TimeUnit)
+    public org.cocos2dx.okhttp3.Interceptor$Chain withWriteTimeout(int,java.util.concurrent.TimeUnit)
+androidx.core.text.util.FindAddress:
+    public static boolean isValidZipCode(java.lang.String,java.lang.String)
+    public static boolean isValidZipCode(java.lang.String)
+    private void <init>()
+    private static final int MIN_ADDRESS_WORDS
+    private static final int MAX_ADDRESS_WORDS
+    private static final int MAX_ADDRESS_LINES
+    private static final int kMaxAddressNameWordLength
+    private static final int MAX_LOCATION_NAME_DISTANCE
+    private static final java.lang.String NL
+    private static final java.lang.String SP
+    private static final java.lang.String WS
+    private static final java.lang.String WORD_DELIM
+    private static final java.lang.String WORD_END
+    private static final java.lang.String HOUSE_POST_DELIM
+    private static final java.lang.String HOUSE_END
+    private static final java.lang.String HOUSE_PRE_DELIM
+    private static final java.lang.String HOUSE_COMPONENT
+org.cocos2dx.okhttp3.internal.Internal:
+    public static void initializeInstanceForTests()
+    public abstract void setCache(org.cocos2dx.okhttp3.OkHttpClient$Builder,org.cocos2dx.okhttp3.internal.cache.InternalCache)
+    public abstract boolean isInvalidHttpUrlHost(java.lang.IllegalArgumentException)
+androidx.core.view.WindowInsetsAnimationControllerCompat$Impl30:
+    public boolean isReady()
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache$Editor$1
+org.cocos2dx.okhttp3.internal.tls.OkHostnameVerifier:
+    private static final int ALT_DNS_NAME
+    private static final int ALT_IPA_NAME
+androidx.appcompat.app.ResourcesFlusher:
+    private void <init>()
+    private static final java.lang.String TAG
+androidx.appcompat.app.AlertController$ButtonHandler:
+    private static final int MSG_DISMISS_DIALOG
+androidx.core.content.res.ResourcesCompat$ThemeCompat$ImplApi29:
+    private void <init>()
+androidx.core.content.pm.PackageInfoCompat$Api28Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.Call:
+    public abstract org.cocos2dx.okhttp3.Request request()
+    public abstract org.cocos2dx.okhttp3.Response execute()
+    public abstract boolean isExecuted()
+    public abstract boolean isCanceled()
+    public abstract org.cocos2dx.okhttp3.Call clone()
+org.cocos2dx.okio.ForwardingSink:
+    public final org.cocos2dx.okio.Sink delegate()
+org.cocos2dx.okhttp3.internal.http.HttpHeaders:
+    private void <init>()
+    public static boolean varyMatches(org.cocos2dx.okhttp3.Response,org.cocos2dx.okhttp3.Headers,org.cocos2dx.okhttp3.Request)
+    public static boolean hasVaryAll(org.cocos2dx.okhttp3.Response)
+    public static boolean hasVaryAll(org.cocos2dx.okhttp3.Headers)
+    private static java.util.Set varyFields(org.cocos2dx.okhttp3.Response)
+    public static java.util.Set varyFields(org.cocos2dx.okhttp3.Headers)
+    public static org.cocos2dx.okhttp3.Headers varyHeaders(org.cocos2dx.okhttp3.Response)
+    public static org.cocos2dx.okhttp3.Headers varyHeaders(org.cocos2dx.okhttp3.Headers,org.cocos2dx.okhttp3.Headers)
+    public static java.util.List parseChallenges(org.cocos2dx.okhttp3.Headers,java.lang.String)
+    private static void parseChallengeHeader(java.util.List,org.cocos2dx.okio.Buffer)
+    private static boolean skipWhitespaceAndCommas(org.cocos2dx.okio.Buffer)
+    private static int skipAll(org.cocos2dx.okio.Buffer,byte)
+    private static java.lang.String readQuotedString(org.cocos2dx.okio.Buffer)
+    private static java.lang.String readToken(org.cocos2dx.okio.Buffer)
+    private static java.lang.String repeat(char,int)
+org.cocos2dx.okhttp3.Response$Builder:
+    public org.cocos2dx.okhttp3.Response$Builder removeHeader(java.lang.String)
+androidx.core.location.LocationManagerCompat$Api28Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.cache2.Relay
+org.cocos2dx.okio.Segment:
+    static final int SIZE
+    static final int SHARE_MINIMUM
+androidx.savedstate.Recreator:
+    static final java.lang.String CLASSES_KEY
+    static final java.lang.String COMPONENT_KEY
+androidx.core.content.pm.ShortcutManagerCompat$Api25Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.MediaType:
+    private void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    public static org.cocos2dx.okhttp3.MediaType get(java.lang.String)
+    public static org.cocos2dx.okhttp3.MediaType parse(java.lang.String)
+    static void <clinit>()
+    public java.lang.String type()
+    public java.lang.String subtype()
+    public java.nio.charset.Charset charset()
+    public java.nio.charset.Charset charset(java.nio.charset.Charset)
+    public boolean equals(java.lang.Object)
+    public int hashCode()
+    private final java.lang.String mediaType
+    private final java.lang.String type
+    private final java.lang.String subtype
+    private final java.lang.String charset
+    private static final java.lang.String TOKEN
+    private static final java.lang.String QUOTED
+    private static final java.util.regex.Pattern TYPE_SUBTYPE
+    private static final java.util.regex.Pattern PARAMETER
+androidx.core.view.DisplayCompat$Api23Impl:
+    private void <init>()
+androidx.core.widget.TextViewOnReceiveContentListener$ApiImpl:
+    private void <init>()
+androidx.versionedparcelable.VersionedParcelParcel:
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+androidx.core.os.ProcessCompat$Api24Impl:
+    private void <init>()
+com.android.vending.expansion.zipfile.APKExpansionSupport:
+    public void <init>()
+    private static final java.lang.String EXP_PATH
+org.cocos2dx.okio.SegmentPool:
+    static final long MAX_SIZE
+org.cocos2dx.okhttp3.Call$Factory
+org.cocos2dx.okio.SegmentedByteString:
+    private java.lang.Object writeReplace()
+    public java.lang.String string(java.nio.charset.Charset)
+    public org.cocos2dx.okio.ByteString toAsciiUppercase()
+    public org.cocos2dx.okio.ByteString md5()
+    public org.cocos2dx.okio.ByteString hmacSha1(org.cocos2dx.okio.ByteString)
+    public org.cocos2dx.okio.ByteString hmacSha256(org.cocos2dx.okio.ByteString)
+    public java.lang.String base64Url()
+    public org.cocos2dx.okio.ByteString substring(int)
+    public java.nio.ByteBuffer asByteBuffer()
+    public void write(java.io.OutputStream)
+    public int indexOf(byte[],int)
+    public int lastIndexOf(byte[],int)
+    byte[] internalArray()
+androidx.core.os.ProcessCompat$Api17Impl:
+    private void <init>()
+androidx.core.widget.TextViewCompat$OreoCallback:
+    private static final int MENU_ITEM_ORDER_PROCESS_TEXT_INTENT_ACTIONS_START
+androidx.vectordrawable.graphics.drawable.AndroidResources:
+    private void <init>()
+    static final int STYLEABLE_VECTOR_DRAWABLE_ALPHA
+    static final int STYLEABLE_VECTOR_DRAWABLE_AUTO_MIRRORED
+    static final int STYLEABLE_VECTOR_DRAWABLE_HEIGHT
+    static final int STYLEABLE_VECTOR_DRAWABLE_NAME
+    static final int STYLEABLE_VECTOR_DRAWABLE_TINT
+    static final int STYLEABLE_VECTOR_DRAWABLE_TINT_MODE
+    static final int STYLEABLE_VECTOR_DRAWABLE_VIEWPORT_HEIGHT
+    static final int STYLEABLE_VECTOR_DRAWABLE_VIEWPORT_WIDTH
+    static final int STYLEABLE_VECTOR_DRAWABLE_WIDTH
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_NAME
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_PIVOT_X
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_PIVOT_Y
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_ROTATION
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_SCALE_X
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_SCALE_Y
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_TRANSLATE_X
+    static final int STYLEABLE_VECTOR_DRAWABLE_GROUP_TRANSLATE_Y
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_FILL_ALPHA
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_FILL_COLOR
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_NAME
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_PATH_DATA
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_STROKE_ALPHA
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_STROKE_COLOR
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_STROKE_LINE_CAP
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_STROKE_LINE_JOIN
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_STROKE_MITER_LIMIT
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_STROKE_WIDTH
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_TRIM_PATH_END
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_TRIM_PATH_OFFSET
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_TRIM_PATH_START
+    static final int STYLEABLE_VECTOR_DRAWABLE_PATH_TRIM_PATH_FILLTYPE
+    static final int STYLEABLE_VECTOR_DRAWABLE_CLIP_PATH_NAME
+    static final int STYLEABLE_VECTOR_DRAWABLE_CLIP_PATH_PATH_DATA
+    static final int STYLEABLE_VECTOR_DRAWABLE_CLIP_PATH_FILLTYPE
+    static final int STYLEABLE_ANIMATED_VECTOR_DRAWABLE_DRAWABLE
+    static final int STYLEABLE_ANIMATED_VECTOR_DRAWABLE_TARGET_ANIMATION
+    static final int STYLEABLE_ANIMATED_VECTOR_DRAWABLE_TARGET_NAME
+    public static final int STYLEABLE_ANIMATOR_INTERPOLATOR
+    public static final int STYLEABLE_ANIMATOR_DURATION
+    public static final int STYLEABLE_ANIMATOR_START_OFFSET
+    public static final int STYLEABLE_ANIMATOR_REPEAT_COUNT
+    public static final int STYLEABLE_ANIMATOR_REPEAT_MODE
+    public static final int STYLEABLE_ANIMATOR_VALUE_FROM
+    public static final int STYLEABLE_ANIMATOR_VALUE_TO
+    public static final int STYLEABLE_ANIMATOR_VALUE_TYPE
+    public static final int STYLEABLE_ANIMATOR_SET_ORDERING
+    public static final int STYLEABLE_PROPERTY_VALUES_HOLDER_VALUE_FROM
+    public static final int STYLEABLE_PROPERTY_VALUES_HOLDER_VALUE_TO
+    public static final int STYLEABLE_PROPERTY_VALUES_HOLDER_VALUE_TYPE
+    public static final int STYLEABLE_PROPERTY_VALUES_HOLDER_PROPERTY_NAME
+    public static final int STYLEABLE_KEYFRAME_VALUE
+    public static final int STYLEABLE_KEYFRAME_INTERPOLATOR
+    public static final int STYLEABLE_KEYFRAME_VALUE_TYPE
+    public static final int STYLEABLE_KEYFRAME_FRACTION
+    public static final int STYLEABLE_PROPERTY_ANIMATOR_PROPERTY_NAME
+    public static final int STYLEABLE_PROPERTY_ANIMATOR_PATH_DATA
+    public static final int STYLEABLE_PROPERTY_ANIMATOR_PROPERTY_X_NAME
+    public static final int STYLEABLE_PROPERTY_ANIMATOR_PROPERTY_Y_NAME
+    public static final int STYLEABLE_PATH_INTERPOLATOR_CONTROL_X_1
+    public static final int STYLEABLE_PATH_INTERPOLATOR_CONTROL_Y_1
+    public static final int STYLEABLE_PATH_INTERPOLATOR_CONTROL_X_2
+    public static final int STYLEABLE_PATH_INTERPOLATOR_CONTROL_Y_2
+    public static final int STYLEABLE_PATH_INTERPOLATOR_PATH_DATA
+    public static final int FAST_OUT_LINEAR_IN
+    public static final int FAST_OUT_SLOW_IN
+    public static final int LINEAR_OUT_SLOW_IN
+com.cocos.service.SDKWrapper$SDKWrapperInstance:
+    private void <init>()
+androidx.core.app.BundleCompat$BundleCompatBaseImpl:
+    private void <init>()
+    private static final java.lang.String TAG
+org.cocos2dx.okio.RealBufferedSink$1
+org.cocos2dx.okhttp3.Cookie$Builder
+org.cocos2dx.okhttp3.Cache$2
+com.VxGameDemo.Game.R$mipmap
+org.cocos2dx.okio.BufferedSink:
+    public abstract long writeAll(org.cocos2dx.okio.Source)
+    public abstract org.cocos2dx.okio.BufferedSink write(org.cocos2dx.okio.Source,long)
+    public abstract org.cocos2dx.okio.BufferedSink writeUtf8(java.lang.String,int,int)
+    public abstract org.cocos2dx.okio.BufferedSink writeUtf8CodePoint(int)
+    public abstract org.cocos2dx.okio.BufferedSink writeString(java.lang.String,java.nio.charset.Charset)
+    public abstract org.cocos2dx.okio.BufferedSink writeString(java.lang.String,int,int,java.nio.charset.Charset)
+    public abstract org.cocos2dx.okio.BufferedSink writeShortLe(int)
+    public abstract org.cocos2dx.okio.BufferedSink writeLong(long)
+    public abstract org.cocos2dx.okio.BufferedSink writeLongLe(long)
+    public abstract org.cocos2dx.okio.BufferedSink writeDecimalLong(long)
+    public abstract java.io.OutputStream outputStream()
+androidx.arch.core.executor.DefaultTaskExecutor$1:
+    private static final java.lang.String THREAD_NAME_STEM
+org.cocos2dx.okio.BufferedSource:
+    public abstract boolean request(long)
+    public abstract long readLongLe()
+    public abstract long readDecimalLong()
+    public abstract org.cocos2dx.okio.ByteString readByteString()
+    public abstract int select(org.cocos2dx.okio.Options)
+    public abstract byte[] readByteArray()
+    public abstract int read(byte[])
+    public abstract int read(byte[],int,int)
+    public abstract long readAll(org.cocos2dx.okio.Sink)
+    public abstract java.lang.String readUtf8()
+    public abstract java.lang.String readUtf8(long)
+    public abstract java.lang.String readUtf8Line()
+    public abstract int readUtf8CodePoint()
+    public abstract java.lang.String readString(java.nio.charset.Charset)
+    public abstract java.lang.String readString(long,java.nio.charset.Charset)
+    public abstract long indexOf(byte,long)
+    public abstract long indexOf(byte,long,long)
+    public abstract long indexOf(org.cocos2dx.okio.ByteString)
+    public abstract long indexOf(org.cocos2dx.okio.ByteString,long)
+    public abstract long indexOfElement(org.cocos2dx.okio.ByteString)
+    public abstract long indexOfElement(org.cocos2dx.okio.ByteString,long)
+    public abstract boolean rangeEquals(long,org.cocos2dx.okio.ByteString)
+    public abstract boolean rangeEquals(long,org.cocos2dx.okio.ByteString,int,int)
+org.cocos2dx.okhttp3.internal.http2.Http2Stream$FramingSink:
+    private static final long EMIT_BUFFER_SIZE
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache$3
+org.cocos2dx.okhttp3.ResponseBody$BomAwareReader
+androidx.core.content.LocusIdCompat$Api29Impl:
+    private void <init>()
+org.cocos2dx.okio.Util:
+    private void <init>()
+    public static long reverseBytesLong(long)
+androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager:
+    boolean isListening()
+org.cocos2dx.okhttp3.ConnectionSpec$Builder:
+    public org.cocos2dx.okhttp3.ConnectionSpec$Builder allEnabledCipherSuites()
+    public org.cocos2dx.okhttp3.ConnectionSpec$Builder allEnabledTlsVersions()
+androidx.core.view.ViewCompat$Api23Impl:
+    private void <init>()
+org.cocos2dx.okio.HashingSink
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache$Snapshot
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VectorDrawableCompatState:
+    int[] mCachedThemeAttrs
+org.cocos2dx.okhttp3.RealCall$AsyncCall:
+    org.cocos2dx.okhttp3.Request request()
+android.support.v4.os.IResultReceiver$Stub$Proxy
+org.cocos2dx.okio.Buffer$UnsafeCursor:
+    public final long resizeBuffer(long)
+    public final long expandBuffer(int)
+com.VxGameDemo.Game.R$dimen
+org.cocos2dx.okio.Utf8
+androidx.appcompat.view.menu.MenuDialogHelper:
+    public void setPresenterCallback(androidx.appcompat.view.menu.MenuPresenter$Callback)
+org.cocos2dx.okhttp3.CertificatePinner$Builder:
+    public varargs org.cocos2dx.okhttp3.CertificatePinner$Builder add(java.lang.String,java.lang.String[])
+org.cocos2dx.okhttp3.internal.http.StatusLine:
+    public static org.cocos2dx.okhttp3.internal.http.StatusLine get(org.cocos2dx.okhttp3.Response)
+    public static final int HTTP_TEMP_REDIRECT
+    public static final int HTTP_PERM_REDIRECT
+    public static final int HTTP_CONTINUE
+org.cocos2dx.okhttp3.internal.http.RealResponseBody:
+    public org.cocos2dx.okhttp3.MediaType contentType()
+org.cocos2dx.okhttp3.CertificatePinner$Pin:
+    void <init>(java.lang.String,java.lang.String)
+    private static final java.lang.String WILDCARD
+org.cocos2dx.okhttp3.internal.http2.Header:
+    public static final java.lang.String RESPONSE_STATUS_UTF8
+    public static final java.lang.String TARGET_METHOD_UTF8
+    public static final java.lang.String TARGET_PATH_UTF8
+    public static final java.lang.String TARGET_SCHEME_UTF8
+    public static final java.lang.String TARGET_AUTHORITY_UTF8
+org.cocos2dx.okhttp3.OkHttpClient:
+    public org.cocos2dx.okhttp3.Cache cache()
+androidx.appcompat.app.TwilightCalculator:
+    public static final int DAY
+    public static final int NIGHT
+    private static final float DEGREES_TO_RADIANS
+    private static final float J0
+    private static final float ALTIDUTE_CORRECTION_CIVIL_TWILIGHT
+    private static final float C1
+    private static final float C2
+    private static final float C3
+    private static final float OBLIQUITY
+    private static final long UTC_2000
+androidx.appcompat.view.menu.CascadingMenuPopup:
+    static final int HORIZ_POSITION_LEFT
+    static final int HORIZ_POSITION_RIGHT
+    static final int SUBMENU_TIMEOUT_MS
+org.cocos2dx.okhttp3.Handshake:
+    public static org.cocos2dx.okhttp3.Handshake get(org.cocos2dx.okhttp3.TlsVersion,org.cocos2dx.okhttp3.CipherSuite,java.util.List,java.util.List)
+    public org.cocos2dx.okhttp3.TlsVersion tlsVersion()
+    public java.security.Principal peerPrincipal()
+    public java.util.List localCertificates()
+    public java.security.Principal localPrincipal()
+androidx.appcompat.widget.AppCompatTextHelper:
+    private static final int TEXT_FONT_WEIGHT_UNSPECIFIED
+    private static final int SANS
+    private static final int SERIF
+    private static final int MONOSPACE
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath:
+    public boolean canApplyTheme()
+    public void applyTheme(android.content.res.Resources$Theme)
+androidx.appcompat.widget.TooltipCompatHandler:
+    private static final java.lang.String TAG
+    private static final long LONG_CLICK_HIDE_TIMEOUT_MS
+    private static final long HOVER_HIDE_TIMEOUT_MS
+    private static final long HOVER_HIDE_TIMEOUT_SHORT_MS
+androidx.core.app.NotificationCompatJellybean:
+    private void <init>()
+    public static final java.lang.String TAG
+    static final java.lang.String EXTRA_DATA_ONLY_REMOTE_INPUTS
+    static final java.lang.String EXTRA_ALLOW_GENERATED_REPLIES
+    private static final java.lang.String KEY_ICON
+    private static final java.lang.String KEY_TITLE
+    private static final java.lang.String KEY_ACTION_INTENT
+    private static final java.lang.String KEY_EXTRAS
+    private static final java.lang.String KEY_REMOTE_INPUTS
+    private static final java.lang.String KEY_DATA_ONLY_REMOTE_INPUTS
+    private static final java.lang.String KEY_RESULT_KEY
+    private static final java.lang.String KEY_LABEL
+    private static final java.lang.String KEY_CHOICES
+    private static final java.lang.String KEY_ALLOW_FREE_FORM_INPUT
+    private static final java.lang.String KEY_ALLOWED_DATA_TYPES
+    private static final java.lang.String KEY_SEMANTIC_ACTION
+    private static final java.lang.String KEY_SHOWS_USER_INTERFACE
+com.cocos.lib.CocosAudioFocusManager:
+    private static final java.lang.String _TAG
+org.cocos2dx.okhttp3.internal.http.HttpMethod:
+    private void <init>()
+androidx.core.view.inputmethod.EditorInfoCompat$Impl30:
+    private void <init>()
+org.cocos2dx.okhttp3.MultipartBody
+org.cocos2dx.okhttp3.HttpUrl:
+    public static org.cocos2dx.okhttp3.HttpUrl parse(java.lang.String)
+    public static org.cocos2dx.okhttp3.HttpUrl get(java.net.URL)
+    public static org.cocos2dx.okhttp3.HttpUrl get(java.net.URI)
+    static java.lang.String canonicalize(java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,java.nio.charset.Charset)
+    public java.net.URL url()
+    public java.lang.String username()
+    public java.lang.String password()
+    public int pathSize()
+    public java.util.List pathSegments()
+    public int querySize()
+    public java.lang.String queryParameter(java.lang.String)
+    public java.util.Set queryParameterNames()
+    public java.util.List queryParameterValues(java.lang.String)
+    public java.lang.String queryParameterName(int)
+    public java.lang.String queryParameterValue(int)
+    public java.lang.String fragment()
+    public java.lang.String topPrivateDomain()
+    static final java.lang.String USERNAME_ENCODE_SET
+    static final java.lang.String PASSWORD_ENCODE_SET
+    static final java.lang.String PATH_SEGMENT_ENCODE_SET
+    static final java.lang.String PATH_SEGMENT_ENCODE_SET_URI
+    static final java.lang.String QUERY_ENCODE_SET
+    static final java.lang.String QUERY_COMPONENT_REENCODE_SET
+    static final java.lang.String QUERY_COMPONENT_ENCODE_SET
+    static final java.lang.String QUERY_COMPONENT_ENCODE_SET_URI
+    static final java.lang.String FORM_ENCODE_SET
+    static final java.lang.String FRAGMENT_ENCODE_SET
+    static final java.lang.String FRAGMENT_ENCODE_SET_URI
+org.cocos2dx.okio.package-info
+org.cocos2dx.okio.InflaterSource:
+    public void <init>(org.cocos2dx.okio.Source,java.util.zip.Inflater)
+org.cocos2dx.okhttp3.WebSocket$Factory
+com.cocos.lib.CanvasRenderingContext2DImpl$Size
+org.cocos2dx.okhttp3.TlsVersion:
+    public java.lang.String javaName()
+org.cocos2dx.okio.AsyncTimeout:
+    private static final int TIMEOUT_WRITE_SIZE
+androidx.collection.ContainerHelpers:
+    private void <init>()
+com.VxGameDemo.Game.R$id
+org.cocos2dx.okio.ByteString:
+    public static org.cocos2dx.okio.ByteString of(byte[],int,int)
+    public static org.cocos2dx.okio.ByteString of(java.nio.ByteBuffer)
+    public static org.cocos2dx.okio.ByteString encodeString(java.lang.String,java.nio.charset.Charset)
+    private org.cocos2dx.okio.ByteString hmac(java.lang.String,org.cocos2dx.okio.ByteString)
+    public static org.cocos2dx.okio.ByteString decodeBase64(java.lang.String)
+    public static org.cocos2dx.okio.ByteString read(java.io.InputStream,int)
+    private void readObject(java.io.ObjectInputStream)
+    private void writeObject(java.io.ObjectOutputStream)
+    public java.lang.String string(java.nio.charset.Charset)
+    public org.cocos2dx.okio.ByteString md5()
+    public org.cocos2dx.okio.ByteString sha512()
+    public org.cocos2dx.okio.ByteString hmacSha1(org.cocos2dx.okio.ByteString)
+    public org.cocos2dx.okio.ByteString hmacSha256(org.cocos2dx.okio.ByteString)
+    public org.cocos2dx.okio.ByteString hmacSha512(org.cocos2dx.okio.ByteString)
+    public java.lang.String base64Url()
+    public org.cocos2dx.okio.ByteString toAsciiUppercase()
+    public org.cocos2dx.okio.ByteString substring(int)
+    byte[] internalArray()
+    public java.nio.ByteBuffer asByteBuffer()
+    public void write(java.io.OutputStream)
+    public final boolean startsWith(byte[])
+    public final boolean endsWith(org.cocos2dx.okio.ByteString)
+    public final boolean endsWith(byte[])
+    public final int indexOf(org.cocos2dx.okio.ByteString)
+    public final int indexOf(org.cocos2dx.okio.ByteString,int)
+    public final int indexOf(byte[])
+    public int indexOf(byte[],int)
+    public final int lastIndexOf(org.cocos2dx.okio.ByteString)
+    public final int lastIndexOf(org.cocos2dx.okio.ByteString,int)
+    public final int lastIndexOf(byte[])
+    public int lastIndexOf(byte[],int)
+    private static final long serialVersionUID
+androidx.appcompat.app.TwilightManager:
+    static void setInstance(androidx.appcompat.app.TwilightManager)
+    private static final java.lang.String TAG
+    private static final int SUNRISE
+    private static final int SUNSET
+org.cocos2dx.okhttp3.internal.http2.Http2Reader$Handler:
+    public abstract void alternateService(int,java.lang.String,org.cocos2dx.okio.ByteString,java.lang.String,int,long)
+org.cocos2dx.okhttp3.internal.annotations.EverythingIsNonNull
+androidx.core.view.ViewCompat$CompatImplApi28:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache$Entry
+org.cocos2dx.okhttp3.Dispatcher:
+    public void <init>(java.util.concurrent.ExecutorService)
+    public void setMaxRequests(int)
+    public synchronized int getMaxRequests()
+    public void setMaxRequestsPerHost(int)
+    public synchronized int getMaxRequestsPerHost()
+    public synchronized void setIdleCallback(java.lang.Runnable)
+    public synchronized void cancelAll()
+    synchronized void executed(org.cocos2dx.okhttp3.RealCall)
+    void finished(org.cocos2dx.okhttp3.RealCall)
+    public synchronized java.util.List queuedCalls()
+    public synchronized java.util.List runningCalls()
+    public synchronized int queuedCallsCount()
+androidx.core.view.ViewCompat$Api30Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.cache2.FileOperator
+androidx.appcompat.widget.AppCompatPopupWindow:
+    public void <init>(android.content.Context,android.util.AttributeSet,int)
+androidx.core.provider.FontProvider:
+    private void <init>()
+org.cocos2dx.okhttp3.ConnectionPool:
+    public synchronized int idleConnectionCount()
+    public synchronized int connectionCount()
+    public void evictAll()
+androidx.core.internal.package-info
+org.cocos2dx.okhttp3.internal.http2.Http2Stream:
+    public org.cocos2dx.okhttp3.internal.http2.Http2Connection getConnection()
+    public synchronized org.cocos2dx.okhttp3.internal.http2.ErrorCode getErrorCode()
+    public void writeHeaders(java.util.List,boolean)
+    public synchronized void setHeadersListener(org.cocos2dx.okhttp3.internal.http2.Header$Listener)
+androidx.appcompat.widget.ActivityChooserModel$DefaultSorter:
+    private static final float WEIGHT_DECAY_COEFFICIENT
+android.support.v4.os.ResultReceiver$MyResultReceiver
+androidx.core.view.WindowInsetsAnimationControllerCompat$Impl:
+    public boolean isReady()
+com.VxGameDemo.Game.R$style
+org.cocos2dx.okhttp3.internal.http.HttpCodec:
+    public static final int DISCARD_STREAM_TIMEOUT_MILLIS
+org.cocos2dx.okhttp3.internal.platform.ConscryptPlatform:
+    public javax.net.ssl.X509TrustManager trustManager(javax.net.ssl.SSLSocketFactory)
+androidx.core.app.NotificationCompat$BubbleMetadata$Api30Impl:
+    private void <init>()
+androidx.core.content.res.ResourcesCompat$ThemeCompat$ImplApi23:
+    private void <init>()
+org.cocos2dx.okio.Options
+org.cocos2dx.okio.RealBufferedSource:
+    public org.cocos2dx.okio.ByteString readByteString()
+    public int select(org.cocos2dx.okio.Options)
+    public byte[] readByteArray()
+    public int read(byte[])
+    public int read(byte[],int,int)
+    public long readAll(org.cocos2dx.okio.Sink)
+    public java.lang.String readUtf8()
+    public java.lang.String readUtf8(long)
+    public java.lang.String readString(java.nio.charset.Charset)
+    public java.lang.String readString(long,java.nio.charset.Charset)
+    public java.lang.String readUtf8Line()
+    public int readUtf8CodePoint()
+    public long readLongLe()
+    public long readDecimalLong()
+    public long indexOf(byte,long)
+    public long indexOf(org.cocos2dx.okio.ByteString)
+    public long indexOf(org.cocos2dx.okio.ByteString,long)
+    public long indexOfElement(org.cocos2dx.okio.ByteString)
+    public long indexOfElement(org.cocos2dx.okio.ByteString,long)
+    public boolean rangeEquals(long,org.cocos2dx.okio.ByteString)
+    public boolean rangeEquals(long,org.cocos2dx.okio.ByteString,int,int)
+androidx.appcompat.widget.RtlSpacingHelper:
+    public static final int UNDEFINED
+org.cocos2dx.okhttp3.internal.cache2.Relay$RelaySource
+org.cocos2dx.okhttp3.internal.http.RequestLine:
+    private void <init>()
+org.cocos2dx.okhttp3.MultipartBody$Part
+org.cocos2dx.okhttp3.Connection:
+    public abstract org.cocos2dx.okhttp3.Route route()
+    public abstract java.net.Socket socket()
+    public abstract org.cocos2dx.okhttp3.Handshake handshake()
+    public abstract org.cocos2dx.okhttp3.Protocol protocol()
+androidx.core.provider.CalleeHandler:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache$2
+org.cocos2dx.okhttp3.Headers:
+    private void <init>(java.lang.String[])
+    public static varargs org.cocos2dx.okhttp3.Headers of(java.lang.String[])
+    public static org.cocos2dx.okhttp3.Headers of(java.util.Map)
+    public java.util.Date getDate(java.lang.String)
+    public java.util.Set names()
+    public long byteCount()
+    public java.util.Map toMultimap()
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache
+org.cocos2dx.okhttp3.internal.http2.Hpack$Writer:
+    private static final int SETTINGS_HEADER_TABLE_SIZE
+    private static final int SETTINGS_HEADER_TABLE_SIZE_LIMIT
+org.cocos2dx.okhttp3.internal.http.RetryAndFollowUpInterceptor:
+    private static final int MAX_FOLLOW_UPS
+org.cocos2dx.okhttp3.internal.http2.Http2Connection$Builder:
+    public org.cocos2dx.okhttp3.internal.http2.Http2Connection$Builder socket(java.net.Socket)
+    public org.cocos2dx.okhttp3.internal.http2.Http2Connection$Builder pushObserver(org.cocos2dx.okhttp3.internal.http2.PushObserver)
+android.support.v4.os.ResultReceiver
+com.cocos.lib.CanvasRenderingContext2DImpl$Point:
+    void <init>(com.cocos.lib.CanvasRenderingContext2DImpl)
+    void set(float,float)
+org.cocos2dx.okhttp3.Cache$CacheResponseBody
+org.cocos2dx.okhttp3.internal.publicsuffix.PublicSuffixDatabase:
+    void setListBytes(byte[],byte[])
+    public static final java.lang.String PUBLIC_SUFFIX_RESOURCE
+    private static final byte EXCEPTION_MARKER
+androidx.appcompat.graphics.drawable.AnimatedStateListDrawableCompat$AnimatedStateListState:
+    private static final long REVERSED_BIT
+    private static final long REVERSIBLE_FLAG_BIT
+androidx.core.content.res.GrowingArrayUtils:
+    public static long[] append(long[],int,long)
+    public static boolean[] append(boolean[],int,boolean)
+    public static java.lang.Object[] insert(java.lang.Object[],int,int,java.lang.Object)
+    public static int[] insert(int[],int,int,int)
+    public static long[] insert(long[],int,int,long)
+    public static boolean[] insert(boolean[],int,int,boolean)
+    private void <init>()
+org.cocos2dx.okhttp3.internal.http2.Http2:
+    static final int INITIAL_MAX_FRAME_SIZE
+    static final byte TYPE_DATA
+    static final byte TYPE_HEADERS
+    static final byte TYPE_PRIORITY
+    static final byte TYPE_RST_STREAM
+    static final byte TYPE_SETTINGS
+    static final byte TYPE_PUSH_PROMISE
+    static final byte TYPE_PING
+    static final byte TYPE_GOAWAY
+    static final byte TYPE_WINDOW_UPDATE
+    static final byte TYPE_CONTINUATION
+    static final byte FLAG_NONE
+    static final byte FLAG_ACK
+    static final byte FLAG_END_STREAM
+    static final byte FLAG_END_HEADERS
+    static final byte FLAG_END_PUSH_PROMISE
+    static final byte FLAG_PADDED
+    static final byte FLAG_PRIORITY
+    static final byte FLAG_COMPRESSED
+androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi24:
+    private void <init>()
+androidx.core.app.ActivityCompat$Api30Impl:
+    private void <init>()
+com.VxGameDemo.Game.R$bool
+com.android.vending.expansion.zipfile.ZipResourceFile:
+    private static int swapEndian(short)
+    com.android.vending.expansion.zipfile.ZipResourceFile$ZipEntryRO[] getEntriesAt(java.lang.String)
+    public com.android.vending.expansion.zipfile.ZipResourceFile$ZipEntryRO[] getAllEntries()
+    public java.io.InputStream getInputStream(java.lang.String)
+    static final java.lang.String LOG_TAG
+    static final boolean LOGV
+    static final int kEOCDSignature
+    static final int kEOCDLen
+    static final int kEOCDNumEntries
+    static final int kEOCDSize
+    static final int kEOCDFileOffset
+    static final int kMaxCommentLen
+    static final int kMaxEOCDSearch
+    static final int kLFHSignature
+    static final int kLFHLen
+    static final int kLFHNameLen
+    static final int kLFHExtraLen
+    static final int kCDESignature
+    static final int kCDELen
+    static final int kCDEMethod
+    static final int kCDEModWhen
+    static final int kCDECRC
+    static final int kCDECompLen
+    static final int kCDEUncompLen
+    static final int kCDENameLen
+    static final int kCDEExtraLen
+    static final int kCDECommentLen
+    static final int kCDELocalOffset
+    static final int kCompressStored
+    static final int kCompressDeflated
+    static final int kZipEntryAdj
+androidx.lifecycle.ClassesInfoCache:
+    private static final int CALL_TYPE_NO_ARG
+    private static final int CALL_TYPE_PROVIDER
+    private static final int CALL_TYPE_PROVIDER_WITH_EVENT
+org.cocos2dx.okhttp3.Request:
+    public java.util.List headers(java.lang.String)
+    public java.lang.Object tag()
+    public java.lang.Object tag(java.lang.Class)
+androidx.fragment.app.FragmentTransition:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.platform.AndroidPlatform:
+    protected javax.net.ssl.X509TrustManager trustManager(javax.net.ssl.SSLSocketFactory)
+    private static final int MAX_LOG_LENGTH
+com.cocos.lib.websocket.CocosWebSocketUtils:
+    void <init>()
+androidx.appcompat.app.ActionBarDrawerToggleHoneycomb:
+    private void <init>()
+    private static final java.lang.String TAG
+org.cocos2dx.okhttp3.internal.cache.FaultHidingSink
+androidx.core.view.WindowCompat$Impl16:
+    private void <init>()
+androidx.core.text.BidiFormatter$DirectionalityEstimator:
+    private static final int DIR_TYPE_CACHE_SIZE
+androidx.core.view.ViewCompat$Api29Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.HttpUrl$Builder:
+    private org.cocos2dx.okhttp3.HttpUrl$Builder addPathSegments(java.lang.String,boolean)
+    private void removeAllCanonicalQueryParameters(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder encodedUsername(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder encodedPassword(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder addPathSegment(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder addPathSegments(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder addEncodedPathSegment(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder addEncodedPathSegments(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder setPathSegment(int,java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder setEncodedPathSegment(int,java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder removePathSegment(int)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder encodedPath(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder query(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder addQueryParameter(java.lang.String,java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder addEncodedQueryParameter(java.lang.String,java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder setQueryParameter(java.lang.String,java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder setEncodedQueryParameter(java.lang.String,java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder removeAllQueryParameters(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder removeAllEncodedQueryParameters(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder fragment(java.lang.String)
+    public org.cocos2dx.okhttp3.HttpUrl$Builder encodedFragment(java.lang.String)
+    static final java.lang.String INVALID_HOST
+org.cocos2dx.okio.GzipSource:
+    private static final byte FHCRC
+    private static final byte FEXTRA
+    private static final byte FNAME
+    private static final byte FCOMMENT
+    private static final byte SECTION_HEADER
+    private static final byte SECTION_BODY
+    private static final byte SECTION_TRAILER
+    private static final byte SECTION_DONE
+androidx.appcompat.widget.ActivityChooserModel:
+    public android.content.Intent getIntent()
+    public void setActivitySorter(androidx.appcompat.widget.ActivityChooserModel$ActivitySorter)
+    public void setHistoryMaxSize(int)
+    public int getHistoryMaxSize()
+    static final boolean DEBUG
+    static final java.lang.String TAG_HISTORICAL_RECORDS
+    static final java.lang.String TAG_HISTORICAL_RECORD
+    static final java.lang.String ATTRIBUTE_ACTIVITY
+    static final java.lang.String ATTRIBUTE_TIME
+    static final java.lang.String ATTRIBUTE_WEIGHT
+    public static final java.lang.String DEFAULT_HISTORY_FILE_NAME
+    public static final int DEFAULT_HISTORY_MAX_LENGTH
+    private static final int DEFAULT_ACTIVITY_INFLATION
+    private static final float DEFAULT_HISTORICAL_RECORD_WEIGHT
+    private static final java.lang.String HISTORY_FILE_EXTENSION
+    private static final int INVALID_INDEX
+org.cocos2dx.okhttp3.Cache:
+    public void <init>(java.io.File,long)
+    void <init>(java.io.File,long,org.cocos2dx.okhttp3.internal.io.FileSystem)
+    public static java.lang.String key(org.cocos2dx.okhttp3.HttpUrl)
+    private void abortQuietly(org.cocos2dx.okhttp3.internal.cache.DiskLruCache$Editor)
+    static int readInt(org.cocos2dx.okio.BufferedSource)
+    org.cocos2dx.okhttp3.Response get(org.cocos2dx.okhttp3.Request)
+    org.cocos2dx.okhttp3.internal.cache.CacheRequest put(org.cocos2dx.okhttp3.Response)
+    void remove(org.cocos2dx.okhttp3.Request)
+    void update(org.cocos2dx.okhttp3.Response,org.cocos2dx.okhttp3.Response)
+    public void initialize()
+    public void delete()
+    public void evictAll()
+    public java.util.Iterator urls()
+    public synchronized int writeAbortCount()
+    public synchronized int writeSuccessCount()
+    public long size()
+    public long maxSize()
+    public void flush()
+    public void close()
+    public java.io.File directory()
+    public boolean isClosed()
+    synchronized void trackResponse(org.cocos2dx.okhttp3.internal.cache.CacheStrategy)
+    synchronized void trackConditionalCacheHit()
+    public synchronized int networkCount()
+    public synchronized int hitCount()
+    public synchronized int requestCount()
+    final org.cocos2dx.okhttp3.internal.cache.DiskLruCache cache
+    int writeSuccessCount
+    int writeAbortCount
+    private int networkCount
+    private int hitCount
+    private int requestCount
+    private static final int VERSION
+    private static final int ENTRY_METADATA
+    private static final int ENTRY_BODY
+    private static final int ENTRY_COUNT
+android.support.v4.os.ResultReceiver$1
+org.cocos2dx.okhttp3.FormBody$Builder
+androidx.appcompat.widget.AppCompatSeekBarHelper:
+    android.graphics.drawable.Drawable getTickMark()
+    void setTickMarkTintList(android.content.res.ColorStateList)
+    android.content.res.ColorStateList getTickMarkTintList()
+    void setTickMarkTintMode(android.graphics.PorterDuff$Mode)
+    android.graphics.PorterDuff$Mode getTickMarkTintMode()
+androidx.core.app.NotificationCompat$BubbleMetadata$Api29Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.Version:
+    private void <init>()
+com.VxGameDemo.Game.R$integer
+org.cocos2dx.okhttp3.internal.ws.RealWebSocket:
+    public org.cocos2dx.okhttp3.Request request()
+    boolean processNextFrame()
+    void awaitTermination(int,java.util.concurrent.TimeUnit)
+    void tearDown()
+    synchronized int sentPingCount()
+    synchronized int receivedPingCount()
+    synchronized int receivedPongCount()
+    synchronized boolean pong(org.cocos2dx.okio.ByteString)
+    private static final long MAX_QUEUE_SIZE
+    private static final long CANCEL_AFTER_CLOSE_MILLIS
+org.cocos2dx.okhttp3.Request$Builder:
+    public org.cocos2dx.okhttp3.Request$Builder url(java.net.URL)
+    public org.cocos2dx.okhttp3.Request$Builder cacheControl(org.cocos2dx.okhttp3.CacheControl)
+    public org.cocos2dx.okhttp3.Request$Builder get()
+    public org.cocos2dx.okhttp3.Request$Builder head()
+    public org.cocos2dx.okhttp3.Request$Builder post(org.cocos2dx.okhttp3.RequestBody)
+    public org.cocos2dx.okhttp3.Request$Builder delete(org.cocos2dx.okhttp3.RequestBody)
+    public org.cocos2dx.okhttp3.Request$Builder delete()
+    public org.cocos2dx.okhttp3.Request$Builder put(org.cocos2dx.okhttp3.RequestBody)
+    public org.cocos2dx.okhttp3.Request$Builder patch(org.cocos2dx.okhttp3.RequestBody)
+    public org.cocos2dx.okhttp3.Request$Builder tag(java.lang.Object)
+    public org.cocos2dx.okhttp3.Request$Builder tag(java.lang.Class,java.lang.Object)
+org.cocos2dx.okhttp3.internal.http2.Hpack$Reader:
+    int maxDynamicTableByteCount()
+com.VxGameDemo.Game.R
+androidx.core.os.ProcessCompat$Api16Impl:
+    private void <init>()
+com.VxGameDemo.Game.R$interpolator
+org.cocos2dx.okhttp3.WebSocket:
+    public abstract org.cocos2dx.okhttp3.Request request()
+    public abstract void cancel()
+androidx.appcompat.widget.ActionMenuPresenter:
+    public void setWidthLimit(int,boolean)
+    public void setItemLimit(int)
+    private static final java.lang.String TAG
+org.cocos2dx.okhttp3.RequestBody$1
+androidx.fragment.app.BackStackRecord:
+    static final java.lang.String TAG
+org.cocos2dx.okhttp3.internal.http2.Http2Codec:
+    private static final java.lang.String CONNECTION
+    private static final java.lang.String HOST
+    private static final java.lang.String KEEP_ALIVE
+    private static final java.lang.String PROXY_CONNECTION
+    private static final java.lang.String TRANSFER_ENCODING
+    private static final java.lang.String TE
+    private static final java.lang.String ENCODING
+    private static final java.lang.String UPGRADE
+com.android.vending.expansion.zipfile.ZipResourceFile$ZipEntryRO:
+    public boolean isUncompressed()
+    public java.lang.String getZipFileName()
+    public java.io.File getZipFile()
+androidx.appcompat.app.AppCompatDelegateImpl$ContextThemeWrapperCompatApi17Impl:
+    private void <init>()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath:
+    public boolean canApplyTheme()
+    public void applyTheme(android.content.res.Resources$Theme)
+    protected static final int FILL_TYPE_WINDING
+androidx.core.app.NotificationCompat$BigPictureStyle$Api23Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.tls.DistinguishedNameParser
+org.cocos2dx.okio.Buffer:
+    private void readFrom(java.io.InputStream,long,boolean)
+    private boolean rangeEquals(org.cocos2dx.okio.Segment,int,org.cocos2dx.okio.ByteString,int,int)
+    private org.cocos2dx.okio.ByteString digest(java.lang.String)
+    private org.cocos2dx.okio.ByteString hmac(java.lang.String,org.cocos2dx.okio.ByteString)
+    public java.io.OutputStream outputStream()
+    public boolean request(long)
+    public final org.cocos2dx.okio.Buffer copyTo(java.io.OutputStream)
+    public final org.cocos2dx.okio.Buffer copyTo(java.io.OutputStream,long,long)
+    public final org.cocos2dx.okio.Buffer writeTo(java.io.OutputStream)
+    public final org.cocos2dx.okio.Buffer writeTo(java.io.OutputStream,long)
+    public final org.cocos2dx.okio.Buffer readFrom(java.io.InputStream)
+    public final org.cocos2dx.okio.Buffer readFrom(java.io.InputStream,long)
+    public long readLongLe()
+    public long readDecimalLong()
+    public int select(org.cocos2dx.okio.Options)
+    int selectPrefix(org.cocos2dx.okio.Options,boolean)
+    public long readAll(org.cocos2dx.okio.Sink)
+    public java.lang.String readString(java.nio.charset.Charset)
+    public java.lang.String readUtf8Line()
+    public int readUtf8CodePoint()
+    public int read(byte[])
+    public org.cocos2dx.okio.Buffer writeString(java.lang.String,java.nio.charset.Charset)
+    public org.cocos2dx.okio.BufferedSink write(org.cocos2dx.okio.Source,long)
+    public org.cocos2dx.okio.Buffer writeShortLe(int)
+    public org.cocos2dx.okio.Buffer writeLongLe(long)
+    public org.cocos2dx.okio.Buffer writeDecimalLong(long)
+    public long indexOf(byte,long)
+    public long indexOf(org.cocos2dx.okio.ByteString)
+    public long indexOf(org.cocos2dx.okio.ByteString,long)
+    public long indexOfElement(org.cocos2dx.okio.ByteString)
+    public long indexOfElement(org.cocos2dx.okio.ByteString,long)
+    public boolean rangeEquals(long,org.cocos2dx.okio.ByteString)
+    public boolean rangeEquals(long,org.cocos2dx.okio.ByteString,int,int)
+    java.util.List segmentSizes()
+    public final org.cocos2dx.okio.ByteString md5()
+    public final org.cocos2dx.okio.ByteString sha1()
+    public final org.cocos2dx.okio.ByteString sha256()
+    public final org.cocos2dx.okio.ByteString sha512()
+    public final org.cocos2dx.okio.ByteString hmacSha1(org.cocos2dx.okio.ByteString)
+    public final org.cocos2dx.okio.ByteString hmacSha256(org.cocos2dx.okio.ByteString)
+    public final org.cocos2dx.okio.ByteString hmacSha512(org.cocos2dx.okio.ByteString)
+    public final org.cocos2dx.okio.Buffer$UnsafeCursor readUnsafe()
+    public final org.cocos2dx.okio.Buffer$UnsafeCursor readUnsafe(org.cocos2dx.okio.Buffer$UnsafeCursor)
+    public final org.cocos2dx.okio.Buffer$UnsafeCursor readAndWriteUnsafe()
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeDecimalLong(long)
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeLongLe(long)
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeLong(long)
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeShortLe(int)
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeString(java.lang.String,int,int,java.nio.charset.Charset)
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeString(java.lang.String,java.nio.charset.Charset)
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeUtf8CodePoint(int)
+    public synthetic bridge org.cocos2dx.okio.BufferedSink writeUtf8(java.lang.String,int,int)
+    static final int REPLACEMENT_CHARACTER
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplBase:
+    private static final int SHOW_PRESS
+    private static final int LONG_PRESS
+    private static final int TAP
+androidx.versionedparcelable.VersionedParcelStream:
+    private static final int TYPE_NULL
+    private static final int TYPE_SUB_BUNDLE
+    private static final int TYPE_SUB_PERSISTABLE_BUNDLE
+    private static final int TYPE_STRING
+    private static final int TYPE_STRING_ARRAY
+    private static final int TYPE_BOOLEAN
+    private static final int TYPE_BOOLEAN_ARRAY
+    private static final int TYPE_DOUBLE
+    private static final int TYPE_DOUBLE_ARRAY
+    private static final int TYPE_INT
+    private static final int TYPE_INT_ARRAY
+    private static final int TYPE_LONG
+    private static final int TYPE_LONG_ARRAY
+    private static final int TYPE_FLOAT
+    private static final int TYPE_FLOAT_ARRAY
+androidx.appcompat.view.menu.MenuHelper
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache$1
+org.cocos2dx.okhttp3.RequestBody:
+    public static org.cocos2dx.okhttp3.RequestBody create(org.cocos2dx.okhttp3.MediaType,java.lang.String)
+    public static org.cocos2dx.okhttp3.RequestBody create(org.cocos2dx.okhttp3.MediaType,org.cocos2dx.okio.ByteString)
+    public static org.cocos2dx.okhttp3.RequestBody create(org.cocos2dx.okhttp3.MediaType,java.io.File)
+org.cocos2dx.okhttp3.package-info
+androidx.core.view.WindowInsetsCompat$TypeImpl30:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.http2.Settings:
+    boolean getEnablePush(boolean)
+    int getMaxHeaderListSize(int)
+    static final int DEFAULT_INITIAL_WINDOW_SIZE
+    static final int HEADER_TABLE_SIZE
+    static final int ENABLE_PUSH
+    static final int MAX_CONCURRENT_STREAMS
+    static final int MAX_FRAME_SIZE
+    static final int MAX_HEADER_LIST_SIZE
+    static final int INITIAL_WINDOW_SIZE
+    static final int COUNT
+org.cocos2dx.okhttp3.internal.Util:
+    private void <init>()
+    public static void closeQuietly(java.net.ServerSocket)
+    public static java.nio.charset.Charset bomAwareCharset(org.cocos2dx.okio.BufferedSource,java.nio.charset.Charset)
+org.cocos2dx.okhttp3.OkHttpClient$Builder:
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder callTimeout(long,java.util.concurrent.TimeUnit)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder callTimeout(java.time.Duration)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder connectTimeout(java.time.Duration)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder readTimeout(java.time.Duration)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder writeTimeout(java.time.Duration)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder pingInterval(long,java.util.concurrent.TimeUnit)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder pingInterval(java.time.Duration)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder proxy(java.net.Proxy)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder proxySelector(java.net.ProxySelector)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder cookieJar(org.cocos2dx.okhttp3.CookieJar)
+    void setInternalCache(org.cocos2dx.okhttp3.internal.cache.InternalCache)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder cache(org.cocos2dx.okhttp3.Cache)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder dns(org.cocos2dx.okhttp3.Dns)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder socketFactory(javax.net.SocketFactory)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder sslSocketFactory(javax.net.ssl.SSLSocketFactory)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder certificatePinner(org.cocos2dx.okhttp3.CertificatePinner)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder authenticator(org.cocos2dx.okhttp3.Authenticator)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder proxyAuthenticator(org.cocos2dx.okhttp3.Authenticator)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder connectionPool(org.cocos2dx.okhttp3.ConnectionPool)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder retryOnConnectionFailure(boolean)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder connectionSpecs(java.util.List)
+    public java.util.List interceptors()
+    public java.util.List networkInterceptors()
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder addNetworkInterceptor(org.cocos2dx.okhttp3.Interceptor)
+    public org.cocos2dx.okhttp3.OkHttpClient$Builder eventListenerFactory(org.cocos2dx.okhttp3.EventListener$Factory)
+org.cocos2dx.okhttp3.internal.http2.Http2Writer:
+    public synchronized void synReply(boolean,int,java.util.List)
+    public synchronized void headers(int,java.util.List)
+org.cocos2dx.okhttp3.Cache$CacheResponseBody$1
+androidx.core.location.GpsStatusWrapper:
+    private static final int GPS_PRN_OFFSET
+    private static final int GPS_PRN_COUNT
+    private static final int SBAS_PRN_MIN
+    private static final int SBAS_PRN_MAX
+    private static final int SBAS_PRN_OFFSET
+    private static final int GLONASS_PRN_OFFSET
+    private static final int GLONASS_PRN_COUNT
+    private static final int QZSS_SVID_MIN
+    private static final int QZSS_SVID_MAX
+    private static final int BEIDOU_PRN_OFFSET
+    private static final int BEIDOU_PRN_COUNT
+org.cocos2dx.okio.Pipe$PipeSource
+org.cocos2dx.okhttp3.Interceptor$Chain:
+    public abstract org.cocos2dx.okhttp3.Connection connection()
+    public abstract org.cocos2dx.okhttp3.Call call()
+    public abstract org.cocos2dx.okhttp3.Interceptor$Chain withConnectTimeout(int,java.util.concurrent.TimeUnit)
+    public abstract org.cocos2dx.okhttp3.Interceptor$Chain withReadTimeout(int,java.util.concurrent.TimeUnit)
+    public abstract org.cocos2dx.okhttp3.Interceptor$Chain withWriteTimeout(int,java.util.concurrent.TimeUnit)
+org.cocos2dx.okhttp3.internal.platform.Jdk9Platform:
+    public javax.net.ssl.X509TrustManager trustManager(javax.net.ssl.SSLSocketFactory)
+org.cocos2dx.okhttp3.CacheControl:
+    public int sMaxAgeSeconds()
+    public boolean noTransform()
+    public boolean immutable()
+com.cocos.lib.CocosEditBoxActivity$Cocos2dxEditText:
+    private void removeListeners()
+    public void hide()
+androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl:
+    private static final int NANOS_PER_MS
+    private static final int NANOS_ROUNDING_VALUE
+androidx.customview.widget.FocusStrategy:
+    private void <init>()
+org.cocos2dx.okio.GzipSink:
+    public final java.util.zip.Deflater deflater()
+androidx.core.view.ViewCompat$Api21Impl:
+    private void <init>()
+android.support.v4.os.ResultReceiver$MyRunnable
+org.cocos2dx.okio.Okio$3
+androidx.core.view.animation.PathInterpolatorApi14:
+    private static final float PRECISION
+org.cocos2dx.okhttp3.internal.cache.DiskLruCache$Editor
+androidx.core.app.NotificationManagerCompat$SideChannelManager:
+    private static final int MSG_QUEUE_TASK
+    private static final int MSG_SERVICE_CONNECTED
+    private static final int MSG_SERVICE_DISCONNECTED
+    private static final int MSG_RETRY_LISTENER_QUEUE
+org.cocos2dx.okhttp3.Cookie:
+    void <init>(org.cocos2dx.okhttp3.Cookie$Builder)
+    private static boolean pathMatch(org.cocos2dx.okhttp3.HttpUrl,java.lang.String)
+    public boolean persistent()
+    public long expiresAt()
+    public boolean hostOnly()
+    public java.lang.String domain()
+    public java.lang.String path()
+    public boolean httpOnly()
+    public boolean secure()
+    public boolean matches(org.cocos2dx.okhttp3.HttpUrl)
+com.VxGameDemo.Game.R$color
+org.cocos2dx.okhttp3.Response:
+    public boolean isSuccessful()
+    public java.util.List headers(java.lang.String)
+    public org.cocos2dx.okhttp3.ResponseBody peekBody(long)
+    public boolean isRedirect()
+    public org.cocos2dx.okhttp3.Response networkResponse()
+    public org.cocos2dx.okhttp3.Response cacheResponse()
+    public java.util.List challenges()
+android.support.v4.os.IResultReceiver$Default
+org.cocos2dx.okhttp3.internal.ws.WebSocketProtocol:
+    public static java.lang.String acceptHeader(java.lang.String)
+    private void <init>()
+    static final java.lang.String ACCEPT_MAGIC
+    static final int B0_FLAG_FIN
+    static final int B0_FLAG_RSV1
+    static final int B0_FLAG_RSV2
+    static final int B0_FLAG_RSV3
+    static final int B0_MASK_OPCODE
+    static final int OPCODE_FLAG_CONTROL
+    static final int B1_FLAG_MASK
+    static final int B1_MASK_LENGTH
+    static final int OPCODE_CONTINUATION
+    static final int OPCODE_TEXT
+    static final int OPCODE_BINARY
+    static final int OPCODE_CONTROL_CLOSE
+    static final int OPCODE_CONTROL_PING
+    static final int OPCODE_CONTROL_PONG
+    static final long PAYLOAD_BYTE_MAX
+    static final long CLOSE_MESSAGE_MAX
+    static final int PAYLOAD_SHORT
+    static final long PAYLOAD_SHORT_MAX
+    static final int PAYLOAD_LONG
+    static final int CLOSE_CLIENT_GOING_AWAY
+    static final int CLOSE_NO_STATUS_CODE
+androidx.core.graphics.drawable.WrappedDrawableApi21:
+    private static final java.lang.String TAG
+org.cocos2dx.okhttp3.internal.http2.Http2Connection:
+    public org.cocos2dx.okhttp3.Protocol getProtocol()
+    public synchronized int openStreamCount()
+    public org.cocos2dx.okhttp3.internal.http2.Http2Stream pushStream(int,java.util.List,boolean)
+    void writeSynReply(int,boolean,java.util.List)
+    void writePingAndAwaitPong()
+    void writePing()
+    synchronized void awaitPong()
+    public void setSettings(org.cocos2dx.okhttp3.internal.http2.Settings)
+    static final int OKHTTP_CLIENT_WINDOW_SIZE
+    static final int INTERVAL_PING
+    static final int DEGRADED_PING
+    static final int AWAIT_PING
+    static final long DEGRADED_PONG_TIMEOUT_NS
+androidx.appcompat.widget.AppCompatHintHelper:
+    private void <init>()
+org.cocos2dx.okhttp3.Headers$Builder:
+    public org.cocos2dx.okhttp3.Headers$Builder add(java.lang.String)
+    public org.cocos2dx.okhttp3.Headers$Builder addUnsafeNonAscii(java.lang.String,java.lang.String)
+    public org.cocos2dx.okhttp3.Headers$Builder addAll(org.cocos2dx.okhttp3.Headers)
+    public org.cocos2dx.okhttp3.Headers$Builder add(java.lang.String,java.util.Date)
+    public org.cocos2dx.okhttp3.Headers$Builder set(java.lang.String,java.util.Date)
+    public java.lang.String get(java.lang.String)
+org.cocos2dx.okhttp3.Credentials
+org.cocos2dx.okio.DeflaterSink:
+    public void <init>(org.cocos2dx.okio.Sink,java.util.zip.Deflater)
+com.VxGameDemo.Game.BuildConfig
+org.cocos2dx.okhttp3.internal.http2.Hpack:
+    private void <init>()
+    private static final int PREFIX_4_BITS
+    private static final int PREFIX_5_BITS
+    private static final int PREFIX_6_BITS
+    private static final int PREFIX_7_BITS
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper:
+    private static final java.lang.String TAG
+    private static final int DEFAULT_AUTO_SIZE_MIN_TEXT_SIZE_IN_SP
+    private static final int DEFAULT_AUTO_SIZE_MAX_TEXT_SIZE_IN_SP
+    private static final int DEFAULT_AUTO_SIZE_GRANULARITY_IN_PX
+    static final float UNSET_AUTO_SIZE_UNIFORM_CONFIGURATION_VALUE
+    private static final int VERY_WIDE
+org.cocos2dx.okhttp3.Challenge
+org.cocos2dx.okhttp3.OkHttpClient$1:
+    public void setCache(org.cocos2dx.okhttp3.OkHttpClient$Builder,org.cocos2dx.okhttp3.internal.cache.InternalCache)
+    public boolean isInvalidHttpUrlHost(java.lang.IllegalArgumentException)
+androidx.core.widget.TextViewOnReceiveContentListener$Api16Impl:
+    private void <init>()
+androidx.core.app.ActivityRecreator:
+    private void <init>()
+    private static final java.lang.String LOG_TAG
+org.cocos2dx.okio.Okio:
+    public static org.cocos2dx.okio.Sink sink(java.io.OutputStream)
+    public static org.cocos2dx.okio.Source source(java.io.File)
+    public static varargs org.cocos2dx.okio.Source source(java.nio.file.Path,java.nio.file.OpenOption[])
+    public static org.cocos2dx.okio.Sink sink(java.io.File)
+    public static org.cocos2dx.okio.Sink appendingSink(java.io.File)
+    public static varargs org.cocos2dx.okio.Sink sink(java.nio.file.Path,java.nio.file.OpenOption[])
+    public static org.cocos2dx.okio.Sink blackhole()
+org.cocos2dx.okio.RealBufferedSink:
+    public org.cocos2dx.okio.BufferedSink writeUtf8(java.lang.String,int,int)
+    public org.cocos2dx.okio.BufferedSink writeUtf8CodePoint(int)
+    public org.cocos2dx.okio.BufferedSink writeString(java.lang.String,java.nio.charset.Charset)
+    public org.cocos2dx.okio.BufferedSink writeString(java.lang.String,int,int,java.nio.charset.Charset)
+    public long writeAll(org.cocos2dx.okio.Source)
+    public org.cocos2dx.okio.BufferedSink write(org.cocos2dx.okio.Source,long)
+    public org.cocos2dx.okio.BufferedSink writeShortLe(int)
+    public org.cocos2dx.okio.BufferedSink writeLong(long)
+    public org.cocos2dx.okio.BufferedSink writeLongLe(long)
+    public org.cocos2dx.okio.BufferedSink writeDecimalLong(long)
+    public java.io.OutputStream outputStream()
+androidx.appcompat.graphics.drawable.DrawableContainer$DrawableContainerState:
+    public final int getEnterFadeDuration()
+    public final int getExitFadeDuration()
+    public final boolean isStateful()
+com.android.vending.expansion.zipfile.APEZProvider
+androidx.core.graphics.BlendModeUtils:
+    private void <init>()
+androidx.fragment.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    static final java.lang.String USER_VISIBLE_HINT_TAG
+    static final int ANIM_DUR
+    public static final int ANIM_STYLE_OPEN_ENTER
+    public static final int ANIM_STYLE_OPEN_EXIT
+    public static final int ANIM_STYLE_CLOSE_ENTER
+    public static final int ANIM_STYLE_CLOSE_EXIT
+    public static final int ANIM_STYLE_FADE_ENTER
+    public static final int ANIM_STYLE_FADE_EXIT
+org.cocos2dx.okhttp3.internal.io.FileSystem$1
+org.cocos2dx.okhttp3.internal.io.FileSystem
+androidx.core.graphics.TypefaceCompatApi24Impl:
+    private static final java.lang.String TAG
+    private static final java.lang.String FONT_FAMILY_CLASS
+    private static final java.lang.String ADD_FONT_WEIGHT_STYLE_METHOD
+    private static final java.lang.String CREATE_FROM_FAMILIES_WITH_DEFAULT_METHOD
+androidx.core.app.NotificationCompat$BigPictureStyle$Api16Impl:
+    private void <init>()
+androidx.appcompat.widget.ActivityChooserView$ActivityChooserViewAdapter:
+    public static final int MAX_ACTIVITY_COUNT_UNLIMITED
+    public static final int MAX_ACTIVITY_COUNT_DEFAULT
+    private static final int ITEM_VIEW_TYPE_ACTIVITY
+    private static final int ITEM_VIEW_TYPE_FOOTER
+    private static final int ITEM_VIEW_TYPE_COUNT
+androidx.loader.content.ModernAsyncTask:
+    public static void setDefaultExecutor(java.util.concurrent.Executor)
+    public static void execute(java.lang.Runnable)
+    public final androidx.loader.content.ModernAsyncTask$Status getStatus()
+    public final java.lang.Object get()
+    public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
+    public final varargs androidx.loader.content.ModernAsyncTask execute(java.lang.Object[])
+    protected final varargs void publishProgress(java.lang.Object[])
+    private static final java.lang.String LOG_TAG
+    private static final int CORE_POOL_SIZE
+    private static final int MAXIMUM_POOL_SIZE
+    private static final int KEEP_ALIVE
+    private static final int MESSAGE_POST_RESULT
+    private static final int MESSAGE_POST_PROGRESS
+androidx.core.view.WindowInsetsCompat$Api21ReflectionHolder:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.http.HttpDate:
+    private void <init>()
+    public static final long MAX_DATE
+org.cocos2dx.okhttp3.Cache$CacheRequestImpl$1
+org.cocos2dx.okio.Base64:
+    private void <init>()
+    public static byte[] decode(java.lang.String)
+    public static java.lang.String encodeUrl(byte[])
+org.cocos2dx.okhttp3.internal.http1.Http1Codec:
+    public boolean isClosed()
+    private static final int STATE_IDLE
+    private static final int STATE_OPEN_REQUEST_BODY
+    private static final int STATE_WRITING_REQUEST_BODY
+    private static final int STATE_READ_RESPONSE_HEADERS
+    private static final int STATE_OPEN_RESPONSE_BODY
+    private static final int STATE_READING_RESPONSE_BODY
+    private static final int STATE_CLOSED
+    private static final int HEADER_LIMIT
+androidx.core.view.WindowCompat$Impl30:
+    private void <init>()
+org.cocos2dx.okhttp3.ResponseBody:
+    private java.nio.charset.Charset charset()
+    public static org.cocos2dx.okhttp3.ResponseBody create(org.cocos2dx.okhttp3.MediaType,java.lang.String)
+    public static org.cocos2dx.okhttp3.ResponseBody create(org.cocos2dx.okhttp3.MediaType,org.cocos2dx.okio.ByteString)
+    public abstract org.cocos2dx.okhttp3.MediaType contentType()
+    public final byte[] bytes()
+    public final java.io.Reader charStream()
+    public final java.lang.String string()
+    private java.io.Reader reader
+androidx.appcompat.widget.AppCompatSpinner$SpinnerPopup:
+    public abstract int getHorizontalOriginalOffset()
+android.support.v4.app.INotificationSideChannel$Default
+androidx.core.view.DisplayCompat$Api17Impl:
+    private void <init>()
+org.cocos2dx.okhttp3.Cache$1
+androidx.appcompat.widget.SuggestionsAdapter:
+    public int getQueryRefinement()
+    public void close()
+    private static final boolean DBG
+    private static final java.lang.String LOG_TAG
+    private static final int QUERY_LIMIT
+    static final int REFINE_NONE
+    static final int REFINE_BY_ENTRY
+    static final int REFINE_ALL
+    static final int INVALID_INDEX
+androidx.core.app.ShareCompat$Api16Impl:
+    private void <init>()
+androidx.core.provider.RequestExecutor:
+    private void <init>()
+androidx.appcompat.widget.TooltipPopup:
+    private static final java.lang.String TAG
+org.cocos2dx.okhttp3.CertificatePinner:
+    public varargs void check(java.lang.String,java.security.cert.Certificate[])
+com.VxGameDemo.Game.R$styleable
+org.cocos2dx.okhttp3.internal.tls.BasicCertificateChainCleaner:
+    private static final int MAX_SIGNERS
+org.cocos2dx.okio.HashingSource
+androidx.appcompat.widget.AppCompatSpinner$DialogPopup:
+    public int getHorizontalOriginalOffset()
+com.VxGameDemo.Game.R$layout
+org.cocos2dx.okio.Pipe
+androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat$PathDataEvaluator:
+    void <init>(androidx.core.graphics.PathParser$PathDataNode[])
+androidx.fragment.app.FragmentManagerImpl$FragmentTag:
+    private void <init>()
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+org.cocos2dx.okhttp3.internal.tls.CertificateChainCleaner:
+    public static varargs org.cocos2dx.okhttp3.internal.tls.CertificateChainCleaner get(java.security.cert.X509Certificate[])
+androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener:
+    private static final int COMPAT_ANIMATION_DURATION
+androidx.loader.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+android.support.v4.os.IResultReceiver$Stub
+android.support.v4.app.INotificationSideChannel$Stub$Proxy:
+    public java.lang.String getInterfaceDescriptor()
+androidx.core.content.res.GradientColorInflaterCompat:
+    private void <init>()
+    static android.graphics.Shader createFromXml(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.content.res.Resources$Theme)
+    private static final int TILE_MODE_CLAMP
+    private static final int TILE_MODE_REPEAT
+    private static final int TILE_MODE_MIRROR
+org.cocos2dx.okio.Buffer$1
+androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi17:
+    private void <init>()
+org.cocos2dx.okhttp3.FormBody
+org.cocos2dx.okhttp3.ResponseBody$1:
+    public org.cocos2dx.okhttp3.MediaType contentType()
+org.cocos2dx.okhttp3.RealCall:
+    public org.cocos2dx.okhttp3.Request request()
+    public org.cocos2dx.okhttp3.Response execute()
+    public synchronized boolean isExecuted()
+    public synthetic bridge org.cocos2dx.okhttp3.Call clone()
+android.support.v4.app.INotificationSideChannel$Stub:
+    public static boolean setDefaultImpl(android.support.v4.app.INotificationSideChannel)
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_notify
+    static final int TRANSACTION_cancel
+    static final int TRANSACTION_cancelAll
+androidx.core.app.JobIntentService$JobServiceEngineImpl:
+    static final java.lang.String TAG
+    static final boolean DEBUG
+com.VxGameDemo.Game.R$anim
+org.cocos2dx.okio.Timeout:
+    public final org.cocos2dx.okio.Timeout deadline(long,java.util.concurrent.TimeUnit)
+    public final void waitUntilNotified(java.lang.Object)
+org.cocos2dx.okhttp3.MultipartBody$Builder
+androidx.core.provider.FontRequestWorker:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.http1.Http1Codec$ChunkedSource:
+    private static final long NO_CHUNK_YET
+com.VxGameDemo.Game.R$string
+org.cocos2dx.okhttp3.internal.platform.Platform:
+    static java.lang.Object readFieldOrNull(java.lang.Object,java.lang.Class,java.lang.String)
+    public java.lang.String getPrefix()
+    protected javax.net.ssl.X509TrustManager trustManager(javax.net.ssl.SSLSocketFactory)
+    public org.cocos2dx.okhttp3.internal.tls.CertificateChainCleaner buildCertificateChainCleaner(javax.net.ssl.SSLSocketFactory)
+    public static final int INFO
+    public static final int WARN
+android.support.v4.os.IResultReceiver
+androidx.appcompat.view.SupportMenuInflater$MenuState:
+    private static final int defaultGroupId
+    private static final int defaultItemId
+    private static final int defaultItemCategory
+    private static final int defaultItemOrder
+    private static final int defaultItemCheckable
+    private static final boolean defaultItemChecked
+    private static final boolean defaultItemVisible
+    private static final boolean defaultItemEnabled
+org.cocos2dx.okhttp3.internal.http2.Http2Connection$ReaderRunnable:
+    public void alternateService(int,java.lang.String,org.cocos2dx.okio.ByteString,java.lang.String,int,long)
+com.VxGameDemo.Game.R$attr
+org.cocos2dx.okhttp3.CacheControl$Builder:
+    public org.cocos2dx.okhttp3.CacheControl$Builder noStore()
+    public org.cocos2dx.okhttp3.CacheControl$Builder maxAge(int,java.util.concurrent.TimeUnit)
+    public org.cocos2dx.okhttp3.CacheControl$Builder minFresh(int,java.util.concurrent.TimeUnit)
+    public org.cocos2dx.okhttp3.CacheControl$Builder noTransform()
+    public org.cocos2dx.okhttp3.CacheControl$Builder immutable()
+org.cocos2dx.okhttp3.Cache$CacheRequestImpl
+androidx.activity.ImmLeaksCleaner:
+    private static final int NOT_INITIALIAZED
+    private static final int INIT_SUCCESS
+    private static final int INIT_FAILED
+androidx.appcompat.widget.ScrollingTabContainerView$TabView:
+    private static final java.lang.String ACCESSIBILITY_CLASS_NAME
+androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi26:
+    private void <init>()
+com.VxGameDemo.Game.R$drawable
+org.cocos2dx.okio.ForwardingSource:
+    public long read(org.cocos2dx.okio.Buffer,long)
+androidx.core.content.ContextCompat$LegacyServiceMapHolder:
+    private void <init>()
+org.cocos2dx.okhttp3.internal.http1.Http1Codec$UnknownLengthSource:
+    final synthetic org.cocos2dx.okhttp3.internal.http1.Http1Codec this$0
+androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$2:
+    final synthetic androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener this$0
+androidx.fragment.app.FragmentManagerImpl$5:
+    final synthetic androidx.fragment.app.FragmentManagerImpl this$0
+androidx.appcompat.app.AlertController$2:
+    final synthetic androidx.appcompat.app.AlertController this$0
+org.cocos2dx.okhttp3.internal.http.HttpHeaders:
+    private static final org.cocos2dx.okio.ByteString QUOTED_STRING_DELIMITERS
+    private static final org.cocos2dx.okio.ByteString TOKEN_DELIMITERS
+androidx.core.provider.RequestExecutor$ReplyRunnable$1:
+    final synthetic androidx.core.provider.RequestExecutor$ReplyRunnable this$0
+androidx.core.graphics.TypefaceCompatBaseImpl$2:
+    final synthetic androidx.core.graphics.TypefaceCompatBaseImpl this$0
+com.cocos.lib.CocosEditBoxActivity$7:
+    final synthetic com.cocos.lib.CocosEditBoxActivity this$0
+androidx.core.provider.CallbackWithHandler$1:
+    final synthetic androidx.core.provider.CallbackWithHandler this$0
+com.cocos.lib.CocosVideoHelper$1$1:
+    final synthetic com.cocos.lib.CocosVideoHelper$1 this$1
+androidx.arch.core.executor.DefaultTaskExecutor$1:
+    final synthetic androidx.arch.core.executor.DefaultTaskExecutor this$0
+com.google.androidgamesdk.ChoreographerCallback$LooperThread:
+    final synthetic com.google.androidgamesdk.ChoreographerCallback this$0
+org.cocos2dx.okhttp3.internal.http2.Http2Stream$FramingSink:
+    static final synthetic boolean $assertionsDisabled
+org.cocos2dx.okhttp3.internal.connection.RealConnection$1:
+    final synthetic org.cocos2dx.okhttp3.internal.connection.RealConnection this$0
+androidx.appcompat.widget.ActionBarContextView$1:
+    final synthetic androidx.appcompat.widget.ActionBarContextView this$0
+org.cocos2dx.okhttp3.RealCall$AsyncCall:
+    static final synthetic boolean $assertionsDisabled
+org.cocos2dx.okhttp3.internal.http.RealResponseBody:
+    private final java.lang.String contentTypeString
+androidx.fragment.app.FragmentTransitionImpl$1:
+    final synthetic androidx.fragment.app.FragmentTransitionImpl this$0
+com.cocos.lib.CocosEditBoxActivity$6:
+    final synthetic com.cocos.lib.CocosEditBoxActivity this$0
+com.cocos.lib.CocosAudioFocusManager:
+    void <init>()
+    static final synthetic boolean $assertionsDisabled
+org.cocos2dx.okhttp3.HttpUrl:
+    private final java.util.List pathSegments
+com.cocos.lib.websocket.CocosWebSocket$1:
+    final synthetic com.cocos.lib.websocket.CocosWebSocket this$0
+com.cocos.lib.CocosVideoHelper$1:
+    final synthetic com.cocos.lib.CocosVideoHelper this$0
+org.cocos2dx.okhttp3.internal.connection.StreamAllocation:
+    static final synthetic boolean $assertionsDisabled
+org.cocos2dx.okhttp3.CipherSuite:
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_NULL_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_NULL_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_EXPORT_WITH_RC4_40_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_RC4_128_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_DES_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_DES_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_DES_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_RC4_128_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_DES_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_WITH_DES_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_WITH_DES_CBC_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_WITH_3DES_EDE_CBC_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_WITH_RC4_128_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_EXPORT_WITH_RC4_40_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_KRB5_EXPORT_WITH_RC4_40_MD5
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_NULL_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_AES_256_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_AES_256_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_PSK_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_PSK_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_PSK_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_PSK_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_RSA_WITH_SEED_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_AES_128_GCM_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_DSS_WITH_AES_256_GCM_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_AES_128_GCM_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DH_anon_WITH_AES_256_GCM_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_EMPTY_RENEGOTIATION_INFO_SCSV
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_FALLBACK_SCSV
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_NULL_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_ECDSA_WITH_NULL_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_ECDSA_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_NULL_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_RSA_WITH_NULL_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_RSA_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_anon_WITH_NULL_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_anon_WITH_RC4_128_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_anon_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_anon_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+    public static final org.cocos2dx.okhttp3.CipherSuite TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256
+org.cocos2dx.okhttp3.internal.http.UnrepeatableRequestBody
+androidx.core.view.WindowInsetsControllerCompat$Impl20$1:
+    final synthetic androidx.core.view.WindowInsetsControllerCompat$Impl20 this$0
+org.cocos2dx.okhttp3.Dispatcher:
+    static final synthetic boolean $assertionsDisabled
+org.cocos2dx.okhttp3.ConnectionPool:
+    static final synthetic boolean $assertionsDisabled
+org.cocos2dx.okhttp3.internal.http2.Http2Stream:
+    static final synthetic boolean $assertionsDisabled
+androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$1:
+    final synthetic androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener this$0
+org.cocos2dx.okhttp3.internal.cache.CacheInterceptor$1:
+    final synthetic org.cocos2dx.okhttp3.internal.cache.CacheInterceptor this$0
+androidx.fragment.app.FragmentTransitionCompat21$1:
+    final synthetic androidx.fragment.app.FragmentTransitionCompat21 this$0
+org.cocos2dx.okhttp3.internal.http2.Hpack$Writer:
+    int headerTableSizeSetting
+org.cocos2dx.okhttp3.internal.http.RetryAndFollowUpInterceptor:
+    private final boolean forWebSocket
+androidx.fragment.app.FragmentTransitionImpl$2:
+    final synthetic androidx.fragment.app.FragmentTransitionImpl this$0
+com.cocos.lib.CanvasRenderingContext2DImpl$Point:
+    final synthetic com.cocos.lib.CanvasRenderingContext2DImpl this$0
+androidx.appcompat.widget.AppCompatSpinner$DropdownPopup$1:
+    final synthetic androidx.appcompat.widget.AppCompatSpinner val$this$0
+com.android.vending.expansion.zipfile.ZipResourceFile:
+    public java.util.HashMap mZipFiles
+    java.nio.ByteBuffer mLEByteBuffer
+org.cocos2dx.okhttp3.internal.platform.AndroidPlatform:
+    private final java.lang.Class sslParametersClass
+org.cocos2dx.okhttp3.internal.http1.Http1Codec$FixedLengthSource:
+    final synthetic org.cocos2dx.okhttp3.internal.http1.Http1Codec this$0
+com.cocos.lib.websocket.CocosGzipRequestInterceptor$1:
+    final synthetic com.cocos.lib.websocket.CocosGzipRequestInterceptor this$0
+androidx.appcompat.app.AlertController$4:
+    final synthetic androidx.appcompat.app.AlertController this$0
+org.cocos2dx.okhttp3.internal.ws.RealWebSocket:
+    static final synthetic boolean $assertionsDisabled
+com.android.vending.expansion.zipfile.ZipResourceFile$ZipEntryRO:
+    public final java.lang.String mFileName
+    public final java.lang.String mZipFileName
+    public long mWhenModified
+    public long mCRC32
+    public long mCompressedLength
+androidx.core.view.ViewPropertyAnimatorCompat$1:
+    final synthetic androidx.core.view.ViewPropertyAnimatorCompat this$0
+org.cocos2dx.okhttp3.ConnectionSpec:
+    public static final org.cocos2dx.okhttp3.ConnectionSpec RESTRICTED_TLS
+    public static final org.cocos2dx.okhttp3.ConnectionSpec COMPATIBLE_TLS
+androidx.appcompat.widget.ActivityChooserView$3:
+    final synthetic androidx.appcompat.widget.ActivityChooserView this$0
+androidx.fragment.app.FragmentTransitionCompat21$2:
+    final synthetic androidx.fragment.app.FragmentTransitionCompat21 this$0
+androidx.core.provider.SelfDestructiveThread$3:
+    final synthetic androidx.core.provider.SelfDestructiveThread this$0
+org.cocos2dx.okhttp3.internal.Util:
+    public static final org.cocos2dx.okhttp3.RequestBody EMPTY_REQUEST
+    private static final org.cocos2dx.okio.ByteString UTF_8_BOM
+    private static final org.cocos2dx.okio.ByteString UTF_16_BE_BOM
+    private static final org.cocos2dx.okio.ByteString UTF_16_LE_BOM
+    private static final org.cocos2dx.okio.ByteString UTF_32_BE_BOM
+    private static final org.cocos2dx.okio.ByteString UTF_32_LE_BOM
+    public static final java.nio.charset.Charset ISO_8859_1
+    private static final java.nio.charset.Charset UTF_16_BE
+    private static final java.nio.charset.Charset UTF_16_LE
+    private static final java.nio.charset.Charset UTF_32_BE
+    private static final java.nio.charset.Charset UTF_32_LE
+androidx.fragment.app.FragmentTransitionImpl$3:
+    final synthetic androidx.fragment.app.FragmentTransitionImpl this$0
+androidx.core.app.ActivityCompat$SharedElementCallback21Impl$1:
+    final synthetic androidx.core.app.ActivityCompat$SharedElementCallback21Impl this$0
+androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton$1:
+    final synthetic androidx.appcompat.widget.ActionMenuPresenter val$this$0
+com.google.androidgamesdk.SwappyDisplayManager$LooperThread:
+    final synthetic com.google.androidgamesdk.SwappyDisplayManager this$0
+org.cocos2dx.okhttp3.CacheControl:
+    public static final org.cocos2dx.okhttp3.CacheControl FORCE_NETWORK
+    public static final org.cocos2dx.okhttp3.CacheControl FORCE_CACHE
+com.cocos.lib.CocosEditBoxActivity$Cocos2dxEditText:
+    private final java.lang.String TAG
+androidx.lifecycle.LiveData$AlwaysActiveObserver:
+    final synthetic androidx.lifecycle.LiveData this$0
+androidx.core.graphics.TypefaceCompatBaseImpl$1:
+    final synthetic androidx.core.graphics.TypefaceCompatBaseImpl this$0
+org.cocos2dx.okhttp3.internal.http2.Http2Connection:
+    private long awaitPingsSent
+    static final synthetic boolean $assertionsDisabled
+com.cocos.lib.CocosEditBoxActivity$Cocos2dxEditText$1:
+    final synthetic com.cocos.lib.CocosEditBoxActivity val$this$0
+androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$3:
+    final synthetic androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener this$0
+androidx.versionedparcelable.VersionedParcel$1:
+    final synthetic androidx.versionedparcelable.VersionedParcel this$0
+androidx.core.view.WindowInsetsControllerCompat$Impl30$1:
+    final synthetic androidx.core.view.WindowInsetsControllerCompat$Impl30 this$0
+androidx.loader.content.ModernAsyncTask:
+    private static volatile java.util.concurrent.Executor sDefaultExecutor
+androidx.core.view.ViewPropertyAnimatorCompat$2:
+    final synthetic androidx.core.view.ViewPropertyAnimatorCompat this$0
+org.cocos2dx.okio.Base64:
+    private static final byte[] URL_MAP
+androidx.fragment.app.FragmentTransitionCompat21$4:
+    final synthetic androidx.fragment.app.FragmentTransitionCompat21 this$0
+com.cocos.lib.CocosVideoHelper$2:
+    final synthetic com.cocos.lib.CocosVideoHelper this$0
+androidx.drawerlayout.widget.DrawerLayout$1:
+    final synthetic androidx.drawerlayout.widget.DrawerLayout this$0
+androidx.appcompat.view.menu.MenuItemWrapperICS$ActionProviderWrapperJB:
+    final synthetic androidx.appcompat.view.menu.MenuItemWrapperICS this$0
+androidx.core.provider.SelfDestructiveThread$2:
+    final synthetic androidx.core.provider.SelfDestructiveThread this$0
+org.cocos2dx.okhttp3.ResponseBody$1:
+    final synthetic org.cocos2dx.okhttp3.MediaType val$contentType
+androidx.core.provider.CallbackWithHandler$2:
+    final synthetic androidx.core.provider.CallbackWithHandler this$0
+org.cocos2dx.okhttp3.internal.http2.Http2Stream$FramingSource:
+    static final synthetic boolean $assertionsDisabled
+com.cocos.lib.CocosEditBoxActivity$5:
+    final synthetic com.cocos.lib.CocosEditBoxActivity this$0
+com.cocos.lib.CocosHandler$1:
+    final synthetic com.cocos.lib.CocosHandler this$0
