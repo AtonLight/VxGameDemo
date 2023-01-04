@@ -19,7 +19,7 @@ export class View extends Component {
     @property({ type: Label })
     private txtEnemyHealth= null;
     private txtLevel:number = 0;
-    private isLog:boolean = true;
+    private isLog:boolean = false;
     start() {
     }
 
