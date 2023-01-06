@@ -4,8 +4,8 @@
 
 // PRIMARY KEY => ICharacterdata
 export const Characterdata = {
-	["C001"]: { ID: "C001", Name: "大毛驴", Weapons: ['D001', 'D002', 'D001', 'D001', 'D001'], Health: 500.0, Speed: 15.0, Attack: 25.0, BaseThrow: 0.2, DoubleHit: 0.3, CriticalStrike: 0.2, CriticalDamage: 1.3, Dodge: 0.2, Block: 0.2 },
-	["C002"]: { ID: "C002", Name: "小锯鳄", Weapons: ['D001', 'D002', 'D001', 'D001', 'D002'], Health: 500.0, Speed: 15.0, Attack: 35.0, BaseThrow: 0.3, DoubleHit: 0.3, CriticalStrike: 0.3, CriticalDamage: 1.3, Dodge: 0.3, Block: 0.3 }
+	["C001"]: { ID: "C001", Name: "骑士", Weapons: ['D001', 'D002', 'D001', 'D001', 'D001'], Health: 500.0, Speed: 15.0, Attack: 25.0, BaseThrow: 0.2, DoubleHit: 0.3, CriticalStrike: 0.2, CriticalDamage: 1.3, Dodge: 0.2, Block: 0.2 },
+	["C002"]: { ID: "C002", Name: "法师", Weapons: ['D001', 'D002', 'D001', 'D001', 'D002'], Health: 500.0, Speed: 15.0, Attack: 35.0, BaseThrow: 0.3, DoubleHit: 0.3, CriticalStrike: 0.3, CriticalDamage: 1.3, Dodge: 0.3, Block: 0.3 }
 };
 
 export interface ICharacterdata {

@@ -19,9 +19,11 @@ export class Character {
     dodge: number; // 基础闪避率
     block: number; // 基础格挡率
     charNme:string;//名字
+    id:string;//序号
 
     data:ICharacterdata;
     charactertype:CharacterType;
+    currentDamage:number = 0;
     currentWeapon:weapon = null;
     currentSpeed:number = 0;
     isThrowWeapon:boolean = false;
@@ -36,6 +38,7 @@ export class Character {
     constructor(dataName:string,type:CharacterType) { 
       this.charactertype = type;
       this.data = Characterdata[dataName]
+      this.id = dataName;
       this.charNme = Characterdata[dataName].Name;
       this.health = Characterdata[dataName].Health;
       this.currentHealth = this.health;
@@ -51,7 +54,7 @@ export class Character {
       for(let i = 0;i< this.data.Weapons.length;i++){
           this.weapons[i] = new weapon(Characterdata[dataName].Weapons[i]);
       }
-      Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health)
+      Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health);
     }  
 
     public getweapon(index:number){
@@ -85,7 +88,7 @@ export class Character {
           let i = math.randomRangeInt(0,this.weapons.length);
           this.getweapon(i);
           this.weapons.splice(i,1);
-          //Item.view.setTxtBattle(this.charNme+" 获得武器: "+this.currentWeapon.weaponName);
+          Item.animate.setWeaponMsg(" 获得武器:"+this.currentWeapon.weaponName);
         }
       }
 
@@ -101,7 +104,7 @@ export class Character {
         if(this.currentWeapon.baseThrow>= rand || this.currentWeapon.times <= 0){
           this.isThrowWeapon = true;
           //console.log(this.data.ID+"投掷武器:"+this.currentWeapon.data.ID);
-          //Item.view.setTxtBattle(this.charNme+" 投掷武器:"+this.currentWeapon.weaponName);
+          Item.animate.setWeaponMsg(" 投掷武器:"+this.currentWeapon.weaponName);
         }
       }
       Item.battleFlow.nextFlow(BattleFlowEnum.Attack);
@@ -123,12 +126,14 @@ export class Character {
       let rand = math.random();
       if(this.criticalStrike >= rand){
         damage = damage * this.criticalDamage;
+        this.isCriical = true;
         //console.log(this.data.ID+"打出了暴击");
         //Item.view.setTxtBattle(this.charNme+" 打出了暴击");
       }
       rand = math.random();
       if(this.doubleHit >= rand && this.isThrowWeapon == false){
         damage = damage * 2;
+        this.isDouble = true;
         //console.log(this.data.ID+"打出了连击");
         //Item.view.setTxtBattle(this.charNme+" 打出了连击");
       }
@@ -141,12 +146,18 @@ export class Character {
       if(this.dodge >= rand){
         //console.log(this.data.ID+"闪避了攻击！");
         //Item.view.setTxtBattle(this.charNme+" 闪避了攻击！");
+        this.isDodge = true;
+        //Item.view.setBattleMsg("");
+        Item.animate.setBattleAniamte('');
         return true;
       }else{
         rand = math.random();
         if(this.block >= rand){
           //console.log(this.data.ID+"格挡了攻击！");
           //Item.view.setTxtBattle(this.charNme+" 格挡了攻击！");
+          this.isBlock = true;
+          //Item.view.setBattleMsg("");
+          Item.animate.setBattleAniamte('');
           return true;
         }else{
           return false;
@@ -156,18 +167,26 @@ export class Character {
 
     public getDamage(damage:number):boolean{
       this.currentHealth = this.currentHealth - damage;
-      Item.view.setBattleMsg(damage);
+      let damgaValue = String(damage);
+      this.currentDamage = damage;
+      //Item.view.setBattleMsg(damgaValue);
+      Item.animate.setBattleAniamte(damgaValue);
       if (this.currentHealth <= 0){
         //console.log(this.data.ID+"被打败了");
         //Item.view.setTxtBattle(this.charNme+" 被打败了");
-        Item.view.setFinalMsg();
         this.currentHealth = 0;
-        Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health)
+        Item.animate.setBattleAniamte(damgaValue);
+        //Item.view.setFinalMsg();
+        //Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health)
         return false;
       }else{
-        Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health) 
+        //Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health) 
         return true;
       }
+    }
+
+    public setCurrHealth(){
+      Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health)
     }
 
     public resetSpeed(){

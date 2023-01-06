@@ -4,6 +4,7 @@ import { View } from './View';
 import { Load } from './Load';
 import { Tools } from './Tools';
 import { Control } from './Control';
+import { Animate } from './Animate';
 const { ccclass, property } = _decorator;
 
 
@@ -13,6 +14,7 @@ export class Item  {
     static load:Load;
     static tools:Tools;
     static control:Control;
+    static animate:Animate;
 }
 
 

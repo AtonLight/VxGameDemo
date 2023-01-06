@@ -5,7 +5,8 @@ export enum BattleFlowEnum{
     GetWeapon = 0,
     ThrowWeapon = 1,
     Attack = 2,
-    Damage = 3
+    Damage = 3,
+    NextTurn = 4,
 }
 
 export enum CharacterType{

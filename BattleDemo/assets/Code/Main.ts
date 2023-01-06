@@ -5,6 +5,7 @@ import { Load } from './Load';
 import { Tools } from './Tools';
 import { View } from './View';
 import { Control } from './Control';
+import { Animate } from './Animate';
 const { ccclass, property } = _decorator;
 
 @ccclass('Main')
@@ -13,6 +14,7 @@ export class Main extends Component {
         Item.battleFlow = new BattleFlow();
         Item.view = this.node.getComponent(View);
         Item.control = this.node.getComponent(Control);
+        Item.animate = this.node.getComponent(Animate);
     }
 
     start() {

@@ -4,8 +4,8 @@
 
 // PRIMARY KEY => IWeapondata
 export const Weapondata = {
-	["D001"]: { ID: "D001", Name: "屠龙宝刀", Attack: 25.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.2, DoubleHit: 0.3, CriticalStrike: 0.2, CriticalDamage: 0.2, Dodge: 0.2, Block: 0.2 },
-	["D002"]: { ID: "D002", Name: "倚天屠龙剑", Attack: 35.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.3, DoubleHit: 0.3, CriticalStrike: 0.3, CriticalDamage: 0.2, Dodge: 0.3, Block: 0.3 }
+	["D001"]: { ID: "D001", Name: "屠龙刀", Attack: 25.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.2, DoubleHit: 0.3, CriticalStrike: 0.2, CriticalDamage: 0.2, Dodge: 0.2, Block: 0.2 },
+	["D002"]: { ID: "D002", Name: "倚天剑", Attack: 35.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.3, DoubleHit: 0.3, CriticalStrike: 0.3, CriticalDamage: 0.2, Dodge: 0.3, Block: 0.3 }
 };
 
 export interface IWeapondata {

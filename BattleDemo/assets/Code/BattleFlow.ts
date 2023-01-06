@@ -48,6 +48,9 @@ export class BattleFlow  {
         this.times  = 0;
         this.turn = 1;
         this.action = true;
+        this.characters[0].setCurrHealth();
+        this.characters[1].setCurrHealth();
+        Item.animate.animateReset();
     }
 
     setAttackAndDenfine(index:number){
@@ -58,6 +61,7 @@ export class BattleFlow  {
             this.attackCharacter = this.characters[1]
             this.defineCharacter = this.characters[0]
         }
+        Item.animate.setAnimate();
         this.nextFlow(BattleFlowEnum.GetWeapon);
     }
 
@@ -68,13 +72,20 @@ export class BattleFlow  {
             this.attackCharacter.throwWeapon();
         }else if(flow == BattleFlowEnum.Attack){
             this.setDamage(this.attackCharacter.Attacks())
+        }else if(flow == BattleFlowEnum.NextTurn){
+            this.attackCharacter.resetSpeed();
+            this.attackCharacter.resetState();
+            this.defineCharacter.resetState();
+            this.turn ++;
+            this.action = true;
         }
     }
 
     setDamage(damage:number){
         if(this.defineCharacter.dodgeAndBlock() == false){
-            if(this.defineCharacter.getDamage(damage) == true){
-                setTimeout(()=>{
+            this.defineCharacter.getDamage(damage)
+           /* if(this.defineCharacter.getDamage(damage)){
+               /* setTimeout(()=>{
                     this.attackCharacter.setTotalDamge(damage);
                     this.attackCharacter.resetSpeed();
                     this.turn ++;
@@ -83,12 +94,8 @@ export class BattleFlow  {
             }
         }else{
             setTimeout(()=>{
-                this.attackCharacter.resetSpeed();
-                this.attackCharacter.resetState();
-                this.defineCharacter.resetState();
-                this.turn ++;
-                this.action = true;
-            },0.5)
+                //this.nextFlow(BattleFlowEnum.NextTurn)
+            },0.5)*/
         }
     }
 

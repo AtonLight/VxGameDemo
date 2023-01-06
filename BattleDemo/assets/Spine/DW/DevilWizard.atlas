@@ -1,0 +1,293 @@
+
+DevilWizard.png
+size: 2031,366
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 1795, 62
+  size: 82, 124
+  orig: 82, 124
+  offset: 0, 0
+  index: -1
+Book
+  rotate: true
+  xy: 1879, 67
+  size: 72, 65
+  orig: 72, 65
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 467, 3
+  size: 84, 120
+  orig: 84, 120
+  offset: 0, 0
+  index: -1
+LArm
+  rotate: false
+  xy: 1801, 2
+  size: 38, 58
+  orig: 38, 58
+  offset: 0, 0
+  index: -1
+LHand
+  rotate: true
+  xy: 219, 9
+  size: 50, 63
+  orig: 50, 73
+  offset: 0, 0
+  index: -1
+LHand_F
+  rotate: true
+  xy: 1716, 2
+  size: 32, 45
+  orig: 32, 45
+  offset: 0, 0
+  index: -1
+RArm
+  rotate: true
+  xy: 1879, 141
+  size: 45, 59
+  orig: 47, 59
+  offset: 0, 0
+  index: -1
+RHand
+  rotate: false
+  xy: 589, 2
+  size: 43, 99
+  orig: 43, 99
+  offset: 0, 0
+  index: -1
+RShoulder
+  rotate: true
+  xy: 1841, 13
+  size: 47, 82
+  orig: 47, 82
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: true
+  xy: 1684, 17
+  size: 150, 30
+  orig: 150, 30
+  offset: 0, 0
+  index: -1
+Weapon2
+  rotate: false
+  xy: 2, 15
+  size: 76, 349
+  orig: 76, 349
+  offset: 0, 0
+  index: -1
+Weapon2_piaodai
+  rotate: true
+  xy: 1763, 3
+  size: 31, 36
+  orig: 31, 36
+  offset: 0, 0
+  index: -1
+dibu
+  rotate: true
+  xy: 918, 142
+  size: 222, 212
+  orig: 226, 215
+  offset: 2, 1
+  index: -1
+eff_atk1/sf0001
+  rotate: true
+  xy: 1342, 14
+  size: 131, 94
+  orig: 134, 96
+  offset: 2, 1
+  index: -1
+eff_atk1/sf0003
+  rotate: true
+  xy: 1101, 4
+  size: 136, 102
+  orig: 139, 104
+  offset: 2, 1
+  index: -1
+eff_atk1/sf0005
+  rotate: false
+  xy: 634, 5
+  size: 164, 96
+  orig: 167, 98
+  offset: 2, 1
+  index: -1
+eff_atk1/sf0007
+  rotate: true
+  xy: 800, 2
+  size: 114, 93
+  orig: 117, 96
+  offset: 2, 2
+  index: -1
+eff_atk1/sf0009
+  rotate: true
+  xy: 1943, 203
+  size: 59, 81
+  orig: 61, 83
+  offset: 1, 1
+  index: -1
+eff_atk1/sf0011
+  rotate: true
+  xy: 1943, 162
+  size: 39, 77
+  orig: 43, 80
+  offset: 2, 1
+  index: -1
+eff_atk2/heixian
+  rotate: false
+  xy: 270, 89
+  size: 256, 275
+  orig: 257, 276
+  offset: 1, 0
+  index: -1
+eff_atk2/heixian2
+  rotate: true
+  xy: 1132, 147
+  size: 217, 215
+  orig: 225, 222
+  offset: 4, 4
+  index: -1
+eff_atk2/star
+  rotate: true
+  xy: 1205, 2
+  size: 143, 135
+  orig: 146, 139
+  offset: 2, 2
+  index: -1
+eff_ult/di
+  rotate: true
+  xy: 1525, 167
+  size: 197, 48
+  orig: 201, 51
+  offset: 3, 2
+  index: -1
+eff_ult/flow0001
+  rotate: false
+  xy: 284, 3
+  size: 181, 84
+  orig: 184, 86
+  offset: 1, 1
+  index: -1
+eff_ult/flow0003
+  rotate: false
+  xy: 895, 5
+  size: 204, 111
+  orig: 207, 114
+  offset: 2, 1
+  index: -1
+eff_ult/flow0005
+  rotate: true
+  xy: 1349, 162
+  size: 202, 174
+  orig: 205, 176
+  offset: 2, 1
+  index: -1
+eff_ult/flow0007
+  rotate: false
+  xy: 528, 103
+  size: 205, 261
+  orig: 207, 263
+  offset: 1, 1
+  index: -1
+eff_ult/flow0009
+  rotate: false
+  xy: 80, 61
+  size: 188, 303
+  orig: 192, 305
+  offset: 2, 1
+  index: -1
+eff_ult/flow0011
+  rotate: false
+  xy: 735, 118
+  size: 181, 246
+  orig: 184, 249
+  offset: 1, 2
+  index: -1
+eff_ult/flow0013
+  rotate: false
+  xy: 1575, 169
+  size: 172, 195
+  orig: 174, 198
+  offset: 1, 2
+  index: -1
+eff_ult/flow0015
+  rotate: true
+  xy: 1438, 2
+  size: 158, 178
+  orig: 161, 181
+  offset: 2, 2
+  index: -1
+eff_weapon/FZ
+  rotate: false
+  xy: 1749, 188
+  size: 101, 176
+  orig: 105, 180
+  offset: 2, 2
+  index: -1
+eff_weapon/sudu
+  rotate: true
+  xy: 1716, 36
+  size: 131, 77
+  orig: 134, 77
+  offset: 3, 0
+  index: -1
+eyes
+  rotate: true
+  xy: 735, 103
+  size: 13, 18
+  orig: 13, 18
+  offset: 0, 0
+  index: -1
+head_b
+  rotate: false
+  xy: 1946, 50
+  size: 46, 110
+  orig: 46, 110
+  offset: 0, 0
+  index: -1
+mo
+  rotate: false
+  xy: 1618, 14
+  size: 64, 153
+  orig: 68, 159
+  offset: 3, 1
+  index: -1
+qunzi1
+  rotate: true
+  xy: 1925, 264
+  size: 100, 104
+  orig: 100, 104
+  offset: 0, 0
+  index: -1
+qunzi2
+  rotate: true
+  xy: 80, 3
+  size: 56, 97
+  orig: 56, 97
+  offset: 0, 0
+  index: -1
+qunzi3
+  rotate: false
+  xy: 1852, 268
+  size: 35, 96
+  orig: 35, 96
+  offset: 0, 0
+  index: -1
+qunzi4
+  rotate: true
+  xy: 1852, 188
+  size: 74, 89
+  orig: 74, 89
+  offset: 0, 0
+  index: -1
+yaodai
+  rotate: true
+  xy: 179, 6
+  size: 53, 38
+  orig: 53, 38
+  offset: 0, 0
+  index: -1

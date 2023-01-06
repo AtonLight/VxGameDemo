@@ -19,7 +19,7 @@ export class View extends Component {
     @property({ type: Label })
     private txtEnemyHealth= null;
     private txtLevel:number = 0;
-    private isLog:boolean = false;
+    private isLog:boolean = true;
     start() {
     }
 
@@ -27,7 +27,7 @@ export class View extends Component {
         
     }
 
-    public setBattleMsg(value:number){
+    public setBattleMsg(){
         let txt = instantiate(this.txtBattle)
         this.context.addChild(txt);
        
@@ -54,9 +54,9 @@ export class View extends Component {
        }else if(Item.battleFlow.defineCharacter.isBlock){
             damageMsg = " 【被格挡了！】"
        }else if(Item.battleFlow.attackCharacter.isDodge){
-            damageMsg = " 造成了 "+value+ " 点【暴击】伤害"
+            damageMsg = " 造成了 "+Item.battleFlow.attackCharacter.currentDamage+ " 点【暴击】伤害"
        }else{
-            damageMsg = " 造成了 "+value+ " 点伤害"
+            damageMsg = " 造成了 "+Item.battleFlow.attackCharacter.currentDamage+ " 点伤害"
        }
 
        txt.getComponent(Label).string = nowTime + atkName + weaponMsg + attackMsg + defName + damageMsg;
