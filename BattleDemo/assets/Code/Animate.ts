@@ -51,7 +51,7 @@ export class Animate extends Component {
     }
 
     public setAnimate(){
-      if(Item.battleFlow.attackCharacter.id == "C001"){
+      if(Item.battleFlow.attackCharacter.id == "10001"){
         //this.txtAtkDamage = this.txtBA;
         //this.txtDefDamage = this.txtDW;
        // this.AtkNode.addChild(this.BA.node);
@@ -62,7 +62,7 @@ export class Animate extends Component {
         this.DW.node.parent = this.DefNode;
         this.pos_porigin = this.BA_origin;
         this.pos_Attack = this.BA_Attack;
-      }else if(Item.battleFlow.attackCharacter.id == "C002"){
+      }else if(Item.battleFlow.attackCharacter.id == "10002"){
         //this.txtAtkDamage = this.txtDW;
         //this.txtDefDamage = this.txtBA;
         //this.AtkNode.addChild(this.DW.node);

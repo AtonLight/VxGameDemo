@@ -4,12 +4,12 @@
 
 // PRIMARY KEY => IWeapondata
 export const Weapondata = {
-	["D001"]: { ID: "D001", Name: "屠龙刀", Attack: 25.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.2, DoubleHit: 0.3, CriticalStrike: 0.2, CriticalDamage: 0.2, Dodge: 0.2, Block: 0.2 },
-	["D002"]: { ID: "D002", Name: "倚天剑", Attack: 35.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.3, DoubleHit: 0.3, CriticalStrike: 0.3, CriticalDamage: 0.2, Dodge: 0.3, Block: 0.3 }
+	['20001']: { ID: 20001, Name: "屠龙刀", Attack: 25.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.2, DoubleHit: 0.3, CriticalStrike: 0.2, CriticalDamage: 0.2, Dodge: 0.2, Block: 0.2 },
+	['20002']: { ID: 20002, Name: "倚天剑", Attack: 35.0, ThrowDamage: 1.2, Times: 3, BaseThrow: 0.3, DoubleHit: 0.3, CriticalStrike: 0.3, CriticalDamage: 0.2, Dodge: 0.3, Block: 0.3 }
 };
 
 export interface IWeapondata {
-    ID: string; // ID (PRIMARY KEY)
+    ID: number; // ID (PRIMARY KEY)
     Name: string[]; // 名字
     Attack: number[]; // 攻击加成
     ThrowDamage: number[]; // 投掷伤害

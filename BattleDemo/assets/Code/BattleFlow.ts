@@ -42,8 +42,8 @@ export class BattleFlow  {
         Item.view.reset();
         this.action = false;
         this.characters = new Array();
-        this.characters[0] = new Character("C001",CharacterType.First);
-        this.characters[1] = new Character("C002",CharacterType.Second);
+        this.characters[0] = new Character("10001",CharacterType.First);
+        this.characters[1] = new Character("10002",CharacterType.Second);
         console.log(this.characters[0].speed);
         this.times  = 0;
         this.turn = 1;
