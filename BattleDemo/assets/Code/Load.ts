@@ -28,7 +28,6 @@ export class Load  {
             //console.log(res.json!);
             //return res.json!;
             this.weaponData = res.json;
-            console.log(this.weaponData);
         })
     }
 }

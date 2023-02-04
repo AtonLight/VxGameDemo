@@ -1,7 +1,7 @@
 import { _decorator, Component, Node } from 'cc';
 import { Item } from './Game';
 import { Character } from './Character';
-import { BattleFlowEnum,CharacterType} from './Enum';
+import { BattleFlowEnum,CharacterType,SkillTurn} from './Enum';
 const { ccclass, property } = _decorator;
 
 
@@ -13,6 +13,7 @@ export class BattleFlow  {
     action:boolean = false;
     times:number = 0;
     turn:number = 1;
+    skillTime:number = 0;
     private totalTime:number = 0;
     constructor() { 
         this.action = false;
@@ -24,6 +25,7 @@ export class BattleFlow  {
        if(this.action == true){
             this.times = this.times + deltaTime;
             this.totalTime = this.totalTime + this.times;
+            this.skillTime = this.skillTime+ deltaTime;
             if (this.times>= 0.15){
                 for(let i = 0;i< this.characters.length;i++){
                     this.characters[i].currentSpeed = this.characters[i].currentSpeed + this.characters[i].speed
@@ -35,6 +37,11 @@ export class BattleFlow  {
                 }
                 this.times = 0;
             }
+
+            if (this.skillTime >= 0.25){
+                Item.skillMgr.update();
+                this.skillTime = 0;
+            }
        }
     }
 
@@ -42,15 +49,19 @@ export class BattleFlow  {
         Item.view.reset();
         this.action = false;
         this.characters = new Array();
-        this.characters[0] = new Character("10001",CharacterType.First);
-        this.characters[1] = new Character("10002",CharacterType.Second);
-        console.log(this.characters[0].speed);
+        this.characters[0] = new Character(10001,CharacterType.First);
+        this.characters[1] = new Character(10002,CharacterType.Second);
         this.times  = 0;
         this.turn = 1;
         this.action = true;
         this.characters[0].setCurrHealth();
         this.characters[1].setCurrHealth();
+
+        Item.skillMgr.addCharactor(this.characters[0]);
+        //Item.skillMgr.addCharactor(this.characters[1]);
+
         Item.animate.animateReset();
+        Item.skillMgr.excuteByTurn(SkillTurn.BATTLE_START);
     }
 
     setAttackAndDenfine(index:number){
@@ -71,6 +82,7 @@ export class BattleFlow  {
         }else if(flow == BattleFlowEnum.ThrowWeapon){
             this.attackCharacter.throwWeapon();
         }else if(flow == BattleFlowEnum.Attack){
+            Item.skillMgr.excuteByTurn(SkillTurn.PRE_ATTACK,this.attackCharacter)
             this.setDamage(this.attackCharacter.Attacks())
         }else if(flow == BattleFlowEnum.NextTurn){
             this.attackCharacter.resetSpeed();

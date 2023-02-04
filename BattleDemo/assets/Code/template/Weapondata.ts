@@ -1,5 +1,5 @@
 /* Weapondata.ts
-* Created by Lee on 2023-01.
+* Created by Lee on 2023-02.
 */
 
 // PRIMARY KEY => IWeapondata

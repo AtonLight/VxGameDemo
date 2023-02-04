@@ -6,12 +6,14 @@ import { Tools } from './Tools';
 import { View } from './View';
 import { Control } from './Control';
 import { Animate } from './Animate';
+import { SkillMgr } from './Skill/SkillMgr';
 const { ccclass, property } = _decorator;
 
 @ccclass('Main')
 export class Main extends Component {
     onLoad(){
         Item.battleFlow = new BattleFlow();
+        Item.skillMgr = new SkillMgr();
         Item.view = this.node.getComponent(View);
         Item.control = this.node.getComponent(Control);
         Item.animate = this.node.getComponent(Animate);

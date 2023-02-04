@@ -1,6 +1,7 @@
 import { _decorator, Component, Node, sp, tween,Vec3, Label, Prefab,instantiate, Tween} from 'cc';
 import { Item } from './Game';
 import { BattleFlowEnum } from './Enum';
+import { Character } from './Character';
 const { ccclass, property } = _decorator;
 
 @ccclass('Test')
@@ -34,6 +35,10 @@ export class Animate extends Component {
 
     private damageMsg:string;
 
+    private tw :any;
+    private BA_tween:any;
+    private DW_tween:any;
+
     onLoad(){
       /*this.BA_origin = new Vec3(-275,330,0);
       this.BA_Attack = new Vec3(-40,330,0);
@@ -51,7 +56,7 @@ export class Animate extends Component {
     }
 
     public setAnimate(){
-      if(Item.battleFlow.attackCharacter.id == "10001"){
+      if(Item.battleFlow.attackCharacter.id == 10001){
         //this.txtAtkDamage = this.txtBA;
         //this.txtDefDamage = this.txtDW;
        // this.AtkNode.addChild(this.BA.node);
@@ -62,7 +67,7 @@ export class Animate extends Component {
         this.DW.node.parent = this.DefNode;
         this.pos_porigin = this.BA_origin;
         this.pos_Attack = this.BA_Attack;
-      }else if(Item.battleFlow.attackCharacter.id == "10002"){
+      }else if(Item.battleFlow.attackCharacter.id == 10002){
         //this.txtAtkDamage = this.txtDW;
         //this.txtDefDamage = this.txtBA;
         //this.AtkNode.addChild(this.DW.node);
@@ -152,16 +157,65 @@ export class Animate extends Component {
       txt.getComponent(Label).string = msg;
 
       let fromPos;
-      if(Item.battleFlow.attackCharacter.id == "C001"){
+      //this.clearAnimate(Item.battleFlow.attackCharacter.id)
+      if(Item.battleFlow.attackCharacter.id == 10001){
         txt.setPosition(this.pos_txtBA); 
-      }else if(Item.battleFlow.attackCharacter.id == "C002"){
+        //this.BA_tween.stop();
+      }else if(Item.battleFlow.attackCharacter.id == 10002){
         txt.setPosition(this.pos_txtDW); 
+        //this.DW_tween.stop();
       }
 
-      tween(txt)
-      .to(0.2,{scale:new Vec3(1.2,1.2,1)})
+      let tw = tween(txt)
+      /*.to(0.2,{scale:new Vec3(1.2,1.2,1)})
       .delay(0.3)
       .call(()=>{
+            txt.destroy();
+        })
+      .start();*/
+
+      if(Item.battleFlow.attackCharacter.id == 10001){
+        this.BA_tween = tw;
+      }else if(Item.battleFlow.attackCharacter.id == 10002){
+        this.DW_tween = tw;
+      }
+
+      tw.to(0.2,{scale:new Vec3(1.2,1.2,1)})
+      .delay(0.3)
+      .call(()=>{
+            txt.destroy();
+        })
+      .start();
+
+    }
+
+    setSkillMsg(char:Character,msg:string){
+      let txt =  instantiate(this.txtDamage)
+      this.uiNode.addChild(txt);
+      txt.getComponent(Label).string = msg;
+
+      let fromPos;
+
+      //this.clearAnimate(char.id)
+      if(char.id == 10001){
+        txt.setPosition(this.pos_txtBA); 
+        //this.BA_tween.stop();
+      }else if(Item.battleFlow.attackCharacter.id == 10002){
+        txt.setPosition(this.pos_txtDW); 
+        //this.DW_tween.stop();
+      }
+
+      let tw = tween(txt)
+
+      if(char.id == 10001){
+         this.BA_tween = tw;
+      }else if(Item.battleFlow.attackCharacter.id == 10002){
+        this.DW_tween = tw;
+      }
+
+      tw.to(0.2,{scale:new Vec3(1.2,1.2,1)})
+      .delay(0.3)
+      .call(()=>{ 
             txt.destroy();
         })
       .start();
@@ -172,15 +226,15 @@ export class Animate extends Component {
       this.uiNode.addChild(txt);
       txt.getComponent(Label).string = this.damageMsg;
       let toPos,fromPos;
-      if(Item.battleFlow.attackCharacter.id == "C001"){
+      if(Item.battleFlow.attackCharacter.id == 10001){
         toPos = new Vec3(this.pos_txtBA.x - 50,this.pos_txtBA.y,0);
         txt.setPosition(this.pos_txtDW);
-      }else if(Item.battleFlow.attackCharacter.id == "C002"){
+      }else if(Item.battleFlow.attackCharacter.id == 10002){
         toPos = new Vec3(this.pos_txtDW.x + 50,this.pos_txtDW.y,0);
         txt.setPosition(this.pos_txtBA);
       }
 
-      let tw =tween(txt)
+      let tw = tween(txt)
       .to(0.2,{scale:new Vec3(1.2,1.2,1)})
       .delay(0.3)
       .call(()=>{
@@ -196,6 +250,15 @@ export class Animate extends Component {
       this.BA.node.setPosition(this.BA_origin);
       this.DW.setAnimation(0,"Idle",true);
       this.DW.node.setPosition(this.DW_origin);
+  }
+
+  private clearAnimate(id:number){
+    if(id == 10001 && this.BA_tween != null){
+      this.BA_tween.stop();
+   }else if(id == 10002 &&  this.DW_tween != null){
+      this.DW_tween.stop();
+   }
+
   }
 
     update(deltaTime: number) {

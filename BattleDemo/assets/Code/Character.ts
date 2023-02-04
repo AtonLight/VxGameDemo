@@ -19,7 +19,7 @@ export class Character {
     dodge: number; // 基础闪避率
     block: number; // 基础格挡率
     charNme:string;//名字
-    id:string;//序号
+    id:number;//序号
 
     data:ICharacterdata;
     charactertype:CharacterType;
@@ -34,8 +34,12 @@ export class Character {
     isDouble:boolean = false;
     isCriical:boolean = false;
     weapons:weapon[];
+    skill:number[];
 
-    constructor(dataName:string,type:CharacterType) { 
+    addDamage:number;
+    resurrect:boolean;
+
+    constructor(dataName:number,type:CharacterType) { 
       this.charactertype = type;
       this.data = Characterdata[dataName]
       this.id = dataName;
@@ -51,6 +55,12 @@ export class Character {
       this.dodge = Characterdata[dataName].Dodge;
       this.block = Characterdata[dataName].Block;
       this.weapons = new Array();
+      this.skill = new Array();
+      this.skill = Characterdata[dataName].Skills;
+      
+      this.addDamage = 0;
+      this.resurrect = false;
+
       for(let i = 0;i< this.data.Weapons.length;i++){
           this.weapons[i] = new weapon(Characterdata[dataName].Weapons[i]);
       }
@@ -114,7 +124,7 @@ export class Character {
     }
 
     public Attacks():number{
-      let damage = this.attack;
+      let damage = this.attack + this.addDamage;
       if (this.isThrowWeapon == true && this.currentWeapon != null){
         damage = this.attack + this.currentWeapon.attack * this.currentWeapon.ThrowDamage;
       }
@@ -172,13 +182,15 @@ export class Character {
       //Item.view.setBattleMsg(damgaValue);
       Item.animate.setBattleAniamte(damgaValue);
       if (this.currentHealth <= 0){
-        //console.log(this.data.ID+"被打败了");
-        //Item.view.setTxtBattle(this.charNme+" 被打败了");
-        this.currentHealth = 0;
-        Item.animate.setBattleAniamte(damgaValue);
-        //Item.view.setFinalMsg();
-        //Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health)
-        return false;
+        if(this.resurrect){
+          this.currentHealth = 1;
+          Item.animate.setBattleAniamte(damgaValue);
+          return true;
+        }else{
+          this.currentHealth = 0;
+          Item.animate.setBattleAniamte(damgaValue);
+          return false;
+        }
       }else{
         //Item.view.setHeath(this.charactertype,this.currentHealth,this.currentHealth/this.health) 
         return true;

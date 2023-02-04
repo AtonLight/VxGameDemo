@@ -54,9 +54,9 @@ export class View extends Component {
        }else if(Item.battleFlow.defineCharacter.isBlock){
             damageMsg = " 【被格挡了！】"
        }else if(Item.battleFlow.attackCharacter.isDodge){
-            damageMsg = " 造成了 "+Item.battleFlow.attackCharacter.currentDamage+ " 点【暴击】伤害"
+            damageMsg = " 造成了 "+Item.battleFlow.defineCharacter.currentDamage+ " 点【暴击】伤害"
        }else{
-            damageMsg = " 造成了 "+Item.battleFlow.attackCharacter.currentDamage+ " 点伤害"
+            damageMsg = " 造成了 "+Item.battleFlow.defineCharacter.currentDamage+ " 点伤害"
        }
 
        txt.getComponent(Label).string = nowTime + atkName + weaponMsg + attackMsg + defName + damageMsg;
@@ -91,6 +91,21 @@ export class View extends Component {
 
         let txtFifth = instantiate(this.txtBattle)
         txtFifth.getComponent(Label).string = atkName +" 获得了胜利！"
+        this.context.addChild(txtFifth);
+    }
+
+
+    public setSkillMsg(charName:string,skillName:string,skillInfo:string){
+        let nowTime = this.showTime(Item.battleFlow.getTotalTime());
+        let txtFifth = instantiate(this.txtBattle)
+        txtFifth.getComponent(Label).string = nowTime  + charName + " 发动技能： 【" + skillName + " 】" ;
+        this.context.addChild(txtFifth);
+    }
+
+    public seteffectMsg(charName:String,effectInfo:String){
+        let nowTime = this.showTime(Item.battleFlow.getTotalTime());
+        let txtFifth = instantiate(this.txtBattle)
+        txtFifth.getComponent(Label).string = nowTime  + charName + " " +  effectInfo;
         this.context.addChild(txtFifth);
     }
 

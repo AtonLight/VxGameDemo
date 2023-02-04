@@ -5,6 +5,7 @@ import { Load } from './Load';
 import { Tools } from './Tools';
 import { Control } from './Control';
 import { Animate } from './Animate';
+import { SkillMgr } from './Skill/SkillMgr';
 const { ccclass, property } = _decorator;
 
 
@@ -15,6 +16,7 @@ export class Item  {
     static tools:Tools;
     static control:Control;
     static animate:Animate;
+    static skillMgr:SkillMgr;
 }
 
 

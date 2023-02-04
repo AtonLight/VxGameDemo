@@ -1,5 +1,5 @@
 /*  DBMacros.ts
-* Created by Lee on 2023-01.
+* Created by Lee on 2023-02.
 */
 import {Characterdata, ICharacterdata} from './template/Characterdata';
 import {Weapondata, IWeapondata} from './template/Weapondata';
